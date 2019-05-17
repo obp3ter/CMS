@@ -7,5 +7,7 @@ import java.util.List;
 public interface ProposalService {
     List<Proposal> getAll();
 
-    Proposal saveProposal(Proposal proposal);
+    Proposal save(Proposal proposal);
+
+    Proposal updateProposal(Integer id, Proposal proposal);
 }
