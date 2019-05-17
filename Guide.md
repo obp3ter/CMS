@@ -6,4 +6,4 @@
 |addAuthor      |/authors                     |POST   |{"name"=value,}|             |
 |uploadFile     |/uploadFile                  |POST   |form-data file |             |
 |uploadMultiple |/uploadMultipleFiles         |POST   |form-data files |             |
-|getFile        |/downloadFile/{fileName:.+}  |GET    |               |             |
+|getFile        |/downloadFile/{fileName}  |GET    |               |             |
