@@ -4,6 +4,6 @@
 |getAllAuthors  |/authors                     |GET    ||                      |               |             |
 |getOneAuthor   |/authors/                    |GET    |id|                    |               |             |
 |addAuthor      |/authors                     |POST   |email,password,company |               |             |
-|uploadFile     |/uploadFile                  |POST   |                       |form-data file |             |
-|uploadMultiple |/uploadMultipleFiles         |POST   |                       |form-data files|             |
+|uploadFile     |/uploadFile                  |POST   |file                   |               |             |
+|uploadMultiple |/uploadMultipleFiles         |POST   |files                  |               |             |
 |getFile        |/downloadFile/{fileName}     |GET    |                       |               |             |
