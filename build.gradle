@@ -1,0 +1,64 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.4.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.7.RELEASE'
+    id 'java'
+    id 'com.gradle.build-scan' version '1.16'
+}
+
+group 'cms'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+ext {
+    springVersion = '5.0.3.RELEASE'
+    postgresqlVersion = '42.2.1'
+    dbcpVersion = '2.2.0'
+
+    slf4jVersion = '1.7.25'
+    log4jVersion = '2.10.0'
+
+    springDataVersion = '2.0.3.RELEASE'
+    hibernateVersion = '5.2.10.Final'
+    caffeineVersion = '2.6.1'
+    hikariVersion = '2.7.7'
+    jaxbapiVersion = '2.3.0'
+
+    javaxValidationVersion = '2.0.0.Final'
+    hibernateValidatorVersion = '6.0.6.Final'
+    javaxElApiVersion = '3.0.1-b04'
+    glassfishJavaxElVersion = '3.0.1-b08'
+
+    lombokVersion = '1.18.4'
+
+    jacksonDatabindVersion = '2.9.4'
+//        javaxServeletApiVersion = '3.1.0'
+    javaxServeletApiVersion = '4.0.1'
+
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-dependencies:2.1.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'org.projectlombok:lombok'
+    runtimeOnly 'org.postgresql:postgresql'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+}
