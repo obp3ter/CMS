@@ -60,5 +60,13 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.github.ben-manes.caffeine:caffeine:2.7.0'
+    compile group: 'org.springframework', name: 'spring-context-support', version: springVersion;
+
+// Optional extensions
+    compile 'com.github.ben-manes.caffeine:guava:2.7.0'
+    compile 'com.github.ben-manes.caffeine:jcache:2.7.0'
+    compileOnly "org.springframework.boot:spring-boot-configuration-processor"
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 
 }
