@@ -1,9 +1,9 @@
 ## HTTPRequests:
-|Command        |RelLink                      |Method |Body           |Description  |
-|:---           |:---                         |:---:  |:---:          |:---:        |
-|getAllAuthors  |/authors                     |GET    |               |             |
-|getOneAuthor   |/authors/{authorId}          |GET    |               |             |
-|addAuthor      |/authors                     |POST   |{"name"=value,}|             |
-|uploadFile     |/uploadFile                  |POST   |form-data file |             |
-|uploadMultiple |/uploadMultipleFiles         |POST   |form-data files|             |
-|getFile        |/downloadFile/{fileName}     |GET    |               |             |
+|Command        |RelLink                      |Method |Params                 |Body           |Description  |
+|:---           |:---                         |:---:  |:---:                  |:---:          |:---:        |
+|getAllAuthors  |/authors                     |GET    ||                      |               |             |
+|getOneAuthor   |/authors/                    |GET    |id|                    |               |             |
+|addAuthor      |/authors                     |POST   |email,password,company |               |             |
+|uploadFile     |/uploadFile                  |POST   |                       |form-data file |             |
+|uploadMultiple |/uploadMultipleFiles         |POST   |                       |form-data files|             |
+|getFile        |/downloadFile/{fileName}     |GET    |                       |               |             |
