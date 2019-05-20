@@ -1,10 +1,13 @@
 package cms.web.controller;
 
 import cms.core.model.Proposal;
+import cms.core.model.Reviewer;
 import cms.core.services.FileStorageService;
 import cms.core.services.ProposalService;
 import cms.web.converter.ProposalConverter;
+import cms.web.converter.ReviewerConverter;
 import cms.web.dto.ProposalDto;
+import cms.web.dto.ReviewerDto;
 import cms.web.payload.UploadFileResponse;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +26,8 @@ public class ProposalController {
     private ProposalService proposalService;
     @Autowired
     private ProposalConverter proposalConverter;
+    @Autowired
+    private ReviewerConverter  reviewerConverter;
 
     @PostMapping("/proposals/uploadfile")
     public List<UploadFileResponse> uploadAbstract( @RequestParam("proposalID") Integer aID,
@@ -33,7 +38,7 @@ public class ProposalController {
 
 
 
-        List<Proposal> proposals = proposalService.getAll();
+        List<Proposal> proposals = proposalService.getAllProposals();
 
         Proposal proposal=new Proposal();
         proposals.stream().forEach(s->{
@@ -47,6 +52,8 @@ public class ProposalController {
                 proposal.setKeyWords(s.getKeyWords());
                 proposal.setTopics(s.getTopics());
                 proposal.setListOfAuthors(s.getListOfAuthors());
+                proposal.setReviewers(s.getReviewers());
+                proposal.setRefusers(s.getRefusers());
             }
         });
 
@@ -78,12 +85,15 @@ public class ProposalController {
                              @RequestParam("proposalName") String proposalName,
                              @RequestParam("keyWords") String keyWords,
                              @RequestParam("topics") String topics,
-                             @RequestParam("listOfAuthors") String listOfAuthors
-                             ) {
+                             @RequestParam("listOfReviewers") String listOfReviewers,
+                             @RequestParam("listOfReviewers") List<Integer> reviewers,
+                             @RequestParam("listOfRefusers") List<Integer> refusers
+                             )
+    {
 
-        ProposalDto dto = new ProposalDto(pID,aID,"","",proposalName,keyWords,topics,listOfAuthors);
+        ProposalDto dto = new ProposalDto(pID,aID,"","",proposalName,keyWords,topics,listOfReviewers,reviewers,refusers);
 
-        Proposal saved = this.proposalService.save(
+        Proposal saved = this.proposalService.saveProposal(
                 proposalConverter.convertDtoToModel(dto)
         );
         ProposalDto result = proposalConverter.convertModelToDto(saved);
@@ -93,9 +103,10 @@ public class ProposalController {
     }
 
     @RequestMapping(value = "/proposals", method = RequestMethod.GET)
-    List<ProposalDto> getProposal(@RequestParam(required = false, defaultValue = "-1") Integer id) {
+    List<ProposalDto> getProposal(@RequestParam(required = false, defaultValue = "-1") Integer id)
+    {
 
-        List<Proposal> proposals = proposalService.getAll();
+        List<Proposal> proposals = proposalService.getAllProposals();
 
         if (id == -1)
             return new ArrayList<>(proposalConverter.convertModelsToDtos(proposals));
@@ -111,9 +122,21 @@ public class ProposalController {
                 proposal.setKeyWords(s.getKeyWords());
                 proposal.setTopics(s.getTopics());
                 proposal.setListOfAuthors(s.getListOfAuthors());
+                proposal.setReviewers(s.getReviewers());
+                proposal.setRefusers(s.getRefusers());
             }
         });
-        ProposalDto result = new ProposalDto(proposal.getId(), proposal.getAuthorID(), proposal.getAbstractFileName(), proposal.getPaperFileName(), proposal.getProposalName(), proposal.getKeyWords(), proposal.getTopics(), proposal.getListOfAuthors());
+        ProposalDto result = new ProposalDto(proposal.getId(),
+                proposal.getAuthorID(),
+                proposal.getAbstractFileName(),
+                proposal.getPaperFileName(),
+                proposal.getProposalName(),
+                proposal.getKeyWords(),
+                proposal.getTopics(),
+                proposal.getListOfAuthors(),
+                proposal.getReviewers(),
+                proposal.getRefusers()
+        );
 
         result.setId(proposal.getId());
 
@@ -121,6 +144,132 @@ public class ProposalController {
         results.add(result);
         return results;
     }
+
+    @RequestMapping(value = "/reviewers", method = RequestMethod.POST)
+    ReviewerDto saveReviewer(@RequestParam("email") String email,
+                             @RequestParam("password") String password,
+                             @RequestParam("refusedPapers") List<Integer> refusedPapers,
+                             @RequestParam("papersToReview") List<Integer> papersToReview)
+    {
+
+        ReviewerDto dto = new ReviewerDto(email,password,papersToReview,refusedPapers);
+
+        Reviewer saved = this.proposalService.saveReviewer(
+                reviewerConverter.convertDtoToModel(dto)
+        );
+        ReviewerDto result = reviewerConverter.convertModelToDto(saved);
+
+
+        return result;
+    }
+
+
+    @RequestMapping(value = "/reviewers", method = RequestMethod.GET)
+    List<ReviewerDto> getReviewer(@RequestParam(required = false, defaultValue = "-1") Integer id) {
+
+        List<Reviewer> reviewers = proposalService.getAllReviewers();
+
+        if (id == -1)
+            return new ArrayList<>(reviewerConverter.convertModelsToDtos(reviewers));
+
+        Reviewer reviewer = new Reviewer();
+        reviewers.stream().forEach(s -> {
+            if (s.getId() == id) {
+                reviewer.setId(s.getId());
+                reviewer.setEmail(s.getEmail());
+                reviewer.setPassword(s.getPassword());
+                reviewer.setPapersToReview(s.getPapersToReview());
+                reviewer.setRefusedPapers(s.getRefusedPapers());
+            }
+        });
+        ReviewerDto result = new ReviewerDto(reviewer.getEmail(), reviewer.getPassword(), reviewer.getPapersToReview(), reviewer.getRefusedPapers());
+
+        result.setId(reviewer.getId());
+
+        var results = new ArrayList<ReviewerDto>();
+        results.add(result);
+        return results;
+    }
+
+    @PostMapping("/proposals/bid")
+    void bidOnProposal(
+            @RequestParam("proposalID") Integer proposalID,
+            @RequestParam("reviewerID") Integer reviewerID
+    )
+    {
+        List<Proposal> proposals = proposalService.getAllProposals();
+        Proposal proposal = new Proposal();
+        proposals.stream().forEach(s -> {
+            if (s.getId() == proposalID) {
+                proposal.setId(s.getId());
+                proposal.setAuthorID(s.getAuthorID());
+                proposal.setAbstractFileName(s.getAbstractFileName());
+                proposal.setPaperFileName(s.getPaperFileName());
+                proposal.setProposalName(s.getProposalName());
+                proposal.setKeyWords(s.getKeyWords());
+                proposal.setTopics(s.getTopics());
+                proposal.setListOfAuthors(s.getListOfAuthors());
+                proposal.setReviewers(s.getReviewers());
+                proposal.setRefusers(s.getRefusers());
+            }
+        });
+
+        List<Reviewer> reviewers = proposalService.getAllReviewers();
+
+        Reviewer reviewer = new Reviewer();
+        reviewers.stream().forEach(s -> {
+            if (s.getId() == reviewerID) {
+                reviewer.setId(s.getId());
+                reviewer.setEmail(s.getEmail());
+                reviewer.setPassword(s.getPassword());
+                reviewer.setPapersToReview(s.getPapersToReview());
+                reviewer.setRefusedPapers(s.getRefusedPapers());
+            }
+        });
+
+        proposalService.bidOnPaper(proposalID,reviewerID,proposal,reviewer);
+    }
+
+    @PostMapping("/proposals/refuse")
+    void refuseProposal(
+            @RequestParam("proposalID") Integer proposalID,
+            @RequestParam("reviewerID") Integer reviewerID
+    )
+    {
+        List<Proposal> proposals = proposalService.getAllProposals();
+        Proposal proposal = new Proposal();
+        proposals.stream().forEach(s -> {
+            if (s.getId() == proposalID) {
+                proposal.setId(s.getId());
+                proposal.setAuthorID(s.getAuthorID());
+                proposal.setAbstractFileName(s.getAbstractFileName());
+                proposal.setPaperFileName(s.getPaperFileName());
+                proposal.setProposalName(s.getProposalName());
+                proposal.setKeyWords(s.getKeyWords());
+                proposal.setTopics(s.getTopics());
+                proposal.setListOfAuthors(s.getListOfAuthors());
+                proposal.setReviewers(s.getReviewers());
+                proposal.setRefusers(s.getRefusers());
+            }
+        });
+
+        List<Reviewer> reviewers = proposalService.getAllReviewers();
+
+        Reviewer reviewer = new Reviewer();
+        reviewers.stream().forEach(s -> {
+            if (s.getId() == reviewerID) {
+                reviewer.setId(s.getId());
+                reviewer.setEmail(s.getEmail());
+                reviewer.setPassword(s.getPassword());
+                reviewer.setPapersToReview(s.getPapersToReview());
+                reviewer.setRefusedPapers(s.getRefusedPapers());
+            }
+        });
+
+        proposalService.refusePaper(proposalID,reviewerID,proposal,reviewer);
+    }
+
+
 
 
 
