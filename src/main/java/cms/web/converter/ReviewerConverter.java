@@ -9,14 +9,14 @@ public class ReviewerConverter
         extends UserConverter<Reviewer, ReviewerDto> {
     @Override
     public Reviewer convertDtoToModel(ReviewerDto dto) {
-        Reviewer reviewer = new Reviewer(dto.getEmail(),dto.getPassword(),dto.getPapersToReview(),dto.getRefusedPapers());
+        Reviewer reviewer = new Reviewer(dto.getEmail(),dto.getPassword(),dto.getPapersToReview(),dto.getRefusedPapers(),dto.getAssignedPapers());
         reviewer.setId(dto.getId());
         return reviewer;
     }
 
     @Override
     public ReviewerDto convertModelToDto(Reviewer reviewer) {
-        ReviewerDto dto = new ReviewerDto(reviewer.getEmail(),reviewer.getPassword(),reviewer.getPapersToReview(),reviewer.getRefusedPapers());
+        ReviewerDto dto = new ReviewerDto(reviewer.getEmail(),reviewer.getPassword(),reviewer.getPapersToReview(),reviewer.getRefusedPapers(),reviewer.getAssignedPapers());
         dto.setId(reviewer.getId());
         return dto;
     }

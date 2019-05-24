@@ -118,4 +118,19 @@ public class ProposalServiceImpl implements ProposalService {
         updateReviewer(ReviewerID,reviewer);
 
     }
+
+    @Override
+    @Transactional
+    public void assignPaper(Integer ProposalID, Integer ReviewerID, Proposal proposal, Reviewer reviewer) {
+        List<Integer> papers = reviewer.getAssignedPapers();
+        papers.add(ProposalID);
+        reviewer.setAssignedPapers(papers);
+
+        List<Integer> reviewers = proposal.getAssignedReviewers();
+        reviewers.add(ReviewerID);
+        proposal.setAssignedReviewers(reviewers);
+
+        updateProposal(ProposalID,proposal);
+        updateReviewer(ReviewerID,reviewer);
+    }
 }

@@ -13,3 +13,4 @@
 |getFile        |/downloadFile/{fileName}     |GET    |                       |               |             |
 |bidOnProposal  |/proposals/bid |POST |proposalID,reviewerID | | |
 |refuseProposal  |/proposals/refuse |POST |proposalID,reviewerID | | |
+|assignProposal  |/proposals/assign |POST |proposalID,reviewerID | | |
