@@ -45,16 +45,18 @@ public class AuthorController {
 
 
     @RequestMapping(value = "/authors", method = RequestMethod.GET)
-    List<AuthorDto> getAuthor(@RequestParam(required = false, defaultValue = "-1") Integer id) {
+    List<AuthorDto> getAuthor(@RequestParam(value ="id",required = false, defaultValue = "-1") Integer id,
+                              @RequestParam(value = "email",required = false, defaultValue = "-1") String email
+                              ) {
 
         List<Author> authors = authorService.getAll();
 
-        if (id == -1)
+        if (id == -1 && email.equals("-1"))
             return new ArrayList<>(authorConverter.convertModelsToDtos(authors));
 
         Author author = new Author();
         authors.stream().forEach(s -> {
-            if (s.getId() == id) {
+            if (s.getId() == id || s.getEmail().equals(email)){
                 author.setId(s.getId());
                 author.setCompany(s.getCompany());
                 author.setEmail(s.getEmail());
@@ -86,16 +88,18 @@ public class AuthorController {
 
 
     @RequestMapping(value = "/chairs", method = RequestMethod.GET)
-    List<ChairDto> getChair(@RequestParam(required = false, defaultValue = "-1") Integer id) {
+    List<ChairDto> getChair(@RequestParam(value ="id",required = false, defaultValue = "-1") Integer id,
+                            @RequestParam(value = "email",required = false, defaultValue = "-1") String email
+    ) {
 
         List<Chair> chairs = chairService.getAll();
 
-        if (id == -1)
+        if (id == -1 && email.equals("-1"))
             return new ArrayList<>(chairConverter.convertModelsToDtos(chairs));
 
         Chair chair = new Chair();
         chairs.stream().forEach(s -> {
-            if (s.getId() == id) {
+            if (s.getId() == id || s.getEmail().equals(email)) {
                 chair.setId(s.getId());
                 chair.setEmail(s.getEmail());
                 chair.setPassword(s.getPassword());

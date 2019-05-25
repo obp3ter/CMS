@@ -170,16 +170,18 @@ public class ProposalController {
 
 
     @RequestMapping(value = "/reviewers", method = RequestMethod.GET)
-    List<ReviewerDto> getReviewer(@RequestParam(required = false, defaultValue = "-1") Integer id) {
+    List<ReviewerDto> getReviewer(@RequestParam(value ="id",required = false, defaultValue = "-1") Integer id,
+                                  @RequestParam(value = "email",required = false, defaultValue = "-1") String email
+    ) {
 
         List<Reviewer> reviewers = proposalService.getAllReviewers();
 
-        if (id == -1)
+        if (id == -1 && email.equals("-1"))
             return new ArrayList<>(reviewerConverter.convertModelsToDtos(reviewers));
 
         Reviewer reviewer = new Reviewer();
         reviewers.stream().forEach(s -> {
-            if (s.getId() == id) {
+            if (s.getId() == id || s.getEmail().equals(email)) {
                 reviewer.setId(s.getId());
                 reviewer.setEmail(s.getEmail());
                 reviewer.setPassword(s.getPassword());
