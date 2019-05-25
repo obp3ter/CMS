@@ -15,6 +15,7 @@ import java.util.List;
 @Setter
 @ToString
 public class SessionDto {
+    private Integer id;
     Chair chair;
     Author speaker;
     List<Listener> listeners;
