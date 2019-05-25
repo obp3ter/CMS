@@ -5,7 +5,7 @@
 |getOneAuthor   |/authors                    |GET    |id or email|                    |               |             |
 |addAuthor      |/authors                     |POST   |email,password,company |               |             |
 | | | | | | |
-| | | | | | Similarly with reviewers & proposals except filenames|
+| | | | | | Similarly with reviewers,chairs & proposals (except filenames)|
 | | | | | | |
 |uploadProposalFiles|/proposals/uploadfile    |POST   |proposalID,whichfile("abstract" or "paper"),file | | |
 |uploadFile     |/uploadFile                  |POST   |file                   |               |             |
