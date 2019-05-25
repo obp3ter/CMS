@@ -1,6 +1,5 @@
 package cms.core.model;
 
-import jdk.javadoc.internal.doclets.toolkit.util.Utils;
 import lombok.*;
 
 import javax.persistence.*;
