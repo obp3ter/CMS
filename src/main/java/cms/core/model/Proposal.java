@@ -1,5 +1,6 @@
 package cms.core.model;
 
+import jdk.javadoc.internal.doclets.toolkit.util.Utils;
 import lombok.*;
 
 import javax.persistence.*;
@@ -30,4 +31,7 @@ public class Proposal {
     protected List<Integer> refusers;
     @ElementCollection
     protected List<Integer> assignedReviewers;
+    @ElementCollection
+    @OneToMany(cascade = CascadeType.ALL)
+    protected  List<Review> reviews;
 }

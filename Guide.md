@@ -14,3 +14,6 @@
 |bidOnProposal  |/proposals/bid |POST |proposalID,reviewerID | | |
 |refuseProposal  |/proposals/refuse |POST |proposalID,reviewerID | | |
 |assignProposal  |/proposals/assign |POST |proposalID,reviewerID | | |
+|getDeadline  |/proposals/deadlines |GET   |deadlineName | | |
+|setDeadline  |/proposals/deadlines |POST |deadlineName,date | | |
+|reviewPaper  |/proposals/review    |POST |proposalID,reviewerID,grade | | |

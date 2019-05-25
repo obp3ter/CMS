@@ -8,13 +8,19 @@ import cms.web.converter.ProposalConverter;
 import cms.web.converter.ReviewerConverter;
 import cms.web.dto.ProposalDto;
 import cms.web.dto.ReviewerDto;
+import cms.web.dto.StringDto;
 import cms.web.payload.UploadFileResponse;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +34,13 @@ public class ProposalController {
     private ProposalConverter proposalConverter;
     @Autowired
     private ReviewerConverter  reviewerConverter;
+
+    @Value("${spring.datasource.url}")
+    private String dsURL;
+    @Value("${spring.datasource.username}")
+    private String dsUser;
+    @Value("${spring.datasource.password}")
+    private String dsPass;
 
     @PostMapping("/proposals/uploadfile")
     public List<UploadFileResponse> uploadAbstract( @RequestParam("proposalID") Integer aID,
@@ -92,7 +105,7 @@ public class ProposalController {
                              )
     {
 
-        ProposalDto dto = new ProposalDto(pID,aID,"","",proposalName,keyWords,topics,listOfReviewers,reviewers,refusers,assignedReviewers);
+        ProposalDto dto = new ProposalDto(pID,aID,"","",proposalName,keyWords,topics,listOfReviewers,reviewers,refusers,assignedReviewers,new ArrayList<>());
 
         Proposal saved = this.proposalService.saveProposal(
                 proposalConverter.convertDtoToModel(dto)
@@ -126,6 +139,7 @@ public class ProposalController {
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
                 proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
             }
         });
         ProposalDto result = new ProposalDto(proposal.getId(),
@@ -138,7 +152,8 @@ public class ProposalController {
                 proposal.getListOfAuthors(),
                 proposal.getReviewers(),
                 proposal.getRefusers(),
-                proposal.getAssignedReviewers()
+                proposal.getAssignedReviewers(),
+                proposal.getReviews()
         );
 
         result.setId(proposal.getId());
@@ -220,6 +235,7 @@ public class ProposalController {
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
                 proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
             }
         });
 
@@ -261,6 +277,7 @@ public class ProposalController {
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
                 proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
             }
         });
 
@@ -302,6 +319,7 @@ public class ProposalController {
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
                 proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
             }
         });
 
@@ -322,9 +340,53 @@ public class ProposalController {
         proposalService.assignPaper(proposalID,reviewerID,proposal,reviewer);
     }
 
+    @GetMapping("proposals/deadlines")
+    StringDto getDeadlines(@RequestParam("deadlineName") String deadline) throws Exception{
+            Connection connection = DriverManager.getConnection(dsURL, dsUser, dsPass);
+            Statement statement = connection.createStatement();
+            ResultSet rs;
+            rs= statement.executeQuery("SELECT date from deadline where name = '"+deadline+"'");
+            rs.next();
+            String res=rs.getString("date");
+            System.out.println(rs.getString("date"));
+            return new StringDto(res);
+    }
+    @PostMapping("proposals/deadlines")
+    void updateDeadlines(@RequestParam("deadlineName") String deadline,
+                         @RequestParam("date") String date) throws Exception{
+        Connection connection = DriverManager.getConnection(dsURL, dsUser, dsPass);
+        Statement statement = connection.createStatement();
+        statement.execute("Update deadline set date = '"+date+"' where name = '"+deadline+"'");
+    }
 
+    @PostMapping("/proposals/review")
+    void reviewProposal(
+            @RequestParam("proposalID") Integer proposalID,
+            @RequestParam("reviewerID") Integer reviewerID,
+            @RequestParam("grade") Integer grade
+    )
+    {
+        List<Proposal> proposals = proposalService.getAllProposals();
+        Proposal proposal = new Proposal();
+        proposals.stream().forEach(s -> {
+            if (s.getId() == proposalID) {
+                proposal.setId(s.getId());
+                proposal.setAuthorID(s.getAuthorID());
+                proposal.setAbstractFileName(s.getAbstractFileName());
+                proposal.setPaperFileName(s.getPaperFileName());
+                proposal.setProposalName(s.getProposalName());
+                proposal.setKeyWords(s.getKeyWords());
+                proposal.setTopics(s.getTopics());
+                proposal.setListOfAuthors(s.getListOfAuthors());
+                proposal.setReviewers(s.getReviewers());
+                proposal.setRefusers(s.getRefusers());
+                proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
+            }
+        });
 
-
+        proposalService.reviewPaper(proposalID,proposal,reviewerID,grade);
+    }
 
 
 }

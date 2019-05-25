@@ -1,6 +1,7 @@
 package cms.core.services;
 
 import cms.core.model.Proposal;
+import cms.core.model.Review;
 import cms.core.model.Reviewer;
 import cms.core.repository.ProposalRepository;
 import cms.core.repository.ReviewerRepository;
@@ -83,7 +84,6 @@ public class ProposalServiceImpl implements ProposalService {
         result.setReviewers(proposal.getReviewers());
         result.setRefusers(proposal.getRefusers());
 
-
         return result;
     }
 
@@ -133,4 +133,20 @@ public class ProposalServiceImpl implements ProposalService {
         updateProposal(ProposalID,proposal);
         updateReviewer(ReviewerID,reviewer);
     }
+
+    @Override
+    @Transactional
+    public void reviewPaper(Integer ProposalID, Proposal proposal, Integer reviewerID,Integer grade) {
+
+        List<Review> reviews = proposal.getReviews();
+        var review=new Review();
+        review.setGrade(grade);
+        review.setReviewerID(reviewerID);
+        reviews.add(review);
+        proposal.setReviews(reviews);
+
+        updateProposal(ProposalID,proposal);
+    }
+
+
 }
