@@ -13,6 +13,7 @@ public class ReviewerDto extends UserDto {
     protected String password;
     protected List<Integer> papersToReview;
     protected List<Integer> refusedPapers;
+    protected List<Integer> assignedPapers;
 
     @Override
     public String toString() {
@@ -21,6 +22,7 @@ public class ReviewerDto extends UserDto {
                 ", password='" + password + '\'' +
                 ", papersToReview=" + papersToReview +
                 ", refusedPapers=" + refusedPapers +
+                ", assignedPapers=" + assignedPapers +
                 '}'+super.toString();
     }
 }

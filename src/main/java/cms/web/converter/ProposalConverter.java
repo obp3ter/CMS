@@ -12,12 +12,12 @@ import java.util.stream.Collectors;
 public class ProposalConverter {
 
     public Proposal convertDtoToModel(ProposalDto dto){
-        Proposal proposal = new Proposal(dto.getId(),dto.getAuthorID(),dto.getAbstractFileName(),dto.getPaperFileName(),dto.getProposalName(),dto.getKeyWords(),dto.getTopics(),dto.getListOfAuthors(),dto.getReviewers(),dto.getRefusers());
+        Proposal proposal = new Proposal(dto.getId(),dto.getAuthorID(),dto.getAbstractFileName(),dto.getPaperFileName(),dto.getProposalName(),dto.getKeyWords(),dto.getTopics(),dto.getListOfAuthors(),dto.getReviewers(),dto.getRefusers(),dto.getAssignedReviewers());
         return proposal;
     }
 
     public ProposalDto convertModelToDto(Proposal proposal){
-        ProposalDto dto= new ProposalDto(proposal.getId(),proposal.getAuthorID(),proposal.getAbstractFileName(),proposal.getPaperFileName(),proposal.getProposalName(),proposal.getKeyWords(),proposal.getTopics(),proposal.getListOfAuthors(),proposal.getReviewers(),proposal.getRefusers());
+        ProposalDto dto= new ProposalDto(proposal.getId(),proposal.getAuthorID(),proposal.getAbstractFileName(),proposal.getPaperFileName(),proposal.getProposalName(),proposal.getKeyWords(),proposal.getTopics(),proposal.getListOfAuthors(),proposal.getReviewers(),proposal.getRefusers(),proposal.getAssignedReviewers());
         return dto;
     }
     public Set<ProposalDto> convertModelsToDtos(Collection<Proposal> models) {

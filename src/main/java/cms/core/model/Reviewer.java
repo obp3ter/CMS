@@ -23,7 +23,9 @@ public class Reviewer extends User{
     protected List<Integer> papersToReview;
     @ElementCollection
     protected List<Integer> refusedPapers;
-    
+    @ElementCollection
+    protected List<Integer> assignedPapers;
+
     public void bidPaper(Integer paperID){
         papersToReview.add(paperID);
     }

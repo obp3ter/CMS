@@ -28,4 +28,6 @@ public class Proposal {
     protected List<Integer> reviewers;
     @ElementCollection
     protected List<Integer> refusers;
+    @ElementCollection
+    protected List<Integer> assignedReviewers;
 }

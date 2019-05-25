@@ -21,6 +21,7 @@ public class ProposalDto {
     protected String listOfAuthors;
     protected List<Integer> reviewers;
     protected List<Integer> refusers;
+    protected List<Integer> assignedReviewers;
 
 
 }

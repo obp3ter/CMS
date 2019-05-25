@@ -2,7 +2,7 @@
 |Command        |RelLink                      |Method |Params                 |Body           |Description  |
 |:---           |:---                         |:---:  |:---:                  |:---:          |:---:        |
 |getAllAuthors  |/authors                     |GET    ||                      |               |             |
-|getOneAuthor   |/authors                    |GET    |id|                    |               |             |
+|getOneAuthor   |/authors                    |GET    |id or email|                    |               |             |
 |addAuthor      |/authors                     |POST   |email,password,company |               |             |
 | | | | | | |
 | | | | | | Similarly with reviewers & proposals except filenames|
@@ -13,3 +13,4 @@
 |getFile        |/downloadFile/{fileName}     |GET    |                       |               |             |
 |bidOnProposal  |/proposals/bid |POST |proposalID,reviewerID | | |
 |refuseProposal  |/proposals/refuse |POST |proposalID,reviewerID | | |
+|assignProposal  |/proposals/assign |POST |proposalID,reviewerID | | |

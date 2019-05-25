@@ -87,11 +87,12 @@ public class ProposalController {
                              @RequestParam("topics") String topics,
                              @RequestParam("listOfReviewers") String listOfReviewers,
                              @RequestParam("listOfReviewers") List<Integer> reviewers,
-                             @RequestParam("listOfRefusers") List<Integer> refusers
+                             @RequestParam("listOfRefusers") List<Integer> refusers,
+                             @RequestParam("assignedReviewers") List<Integer> assignedReviewers
                              )
     {
 
-        ProposalDto dto = new ProposalDto(pID,aID,"","",proposalName,keyWords,topics,listOfReviewers,reviewers,refusers);
+        ProposalDto dto = new ProposalDto(pID,aID,"","",proposalName,keyWords,topics,listOfReviewers,reviewers,refusers,assignedReviewers);
 
         Proposal saved = this.proposalService.saveProposal(
                 proposalConverter.convertDtoToModel(dto)
@@ -124,6 +125,7 @@ public class ProposalController {
                 proposal.setListOfAuthors(s.getListOfAuthors());
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
+                proposal.setAssignedReviewers(s.getAssignedReviewers());
             }
         });
         ProposalDto result = new ProposalDto(proposal.getId(),
@@ -135,7 +137,8 @@ public class ProposalController {
                 proposal.getTopics(),
                 proposal.getListOfAuthors(),
                 proposal.getReviewers(),
-                proposal.getRefusers()
+                proposal.getRefusers(),
+                proposal.getAssignedReviewers()
         );
 
         result.setId(proposal.getId());
@@ -149,10 +152,12 @@ public class ProposalController {
     ReviewerDto saveReviewer(@RequestParam("email") String email,
                              @RequestParam("password") String password,
                              @RequestParam("refusedPapers") List<Integer> refusedPapers,
-                             @RequestParam("papersToReview") List<Integer> papersToReview)
+                             @RequestParam("papersToReview") List<Integer> papersToReview,
+                             @RequestParam("assignedPapers") List<Integer> assignedPapers
+    )
     {
 
-        ReviewerDto dto = new ReviewerDto(email,password,papersToReview,refusedPapers);
+        ReviewerDto dto = new ReviewerDto(email,password,papersToReview,refusedPapers,assignedPapers);
 
         Reviewer saved = this.proposalService.saveReviewer(
                 reviewerConverter.convertDtoToModel(dto)
@@ -165,24 +170,27 @@ public class ProposalController {
 
 
     @RequestMapping(value = "/reviewers", method = RequestMethod.GET)
-    List<ReviewerDto> getReviewer(@RequestParam(required = false, defaultValue = "-1") Integer id) {
+    List<ReviewerDto> getReviewer(@RequestParam(value ="id",required = false, defaultValue = "-1") Integer id,
+                                  @RequestParam(value = "email",required = false, defaultValue = "-1") String email
+    ) {
 
         List<Reviewer> reviewers = proposalService.getAllReviewers();
 
-        if (id == -1)
+        if (id == -1 && email.equals("-1"))
             return new ArrayList<>(reviewerConverter.convertModelsToDtos(reviewers));
 
         Reviewer reviewer = new Reviewer();
         reviewers.stream().forEach(s -> {
-            if (s.getId() == id) {
+            if (s.getId() == id || s.getEmail().equals(email)) {
                 reviewer.setId(s.getId());
                 reviewer.setEmail(s.getEmail());
                 reviewer.setPassword(s.getPassword());
                 reviewer.setPapersToReview(s.getPapersToReview());
                 reviewer.setRefusedPapers(s.getRefusedPapers());
+                reviewer.setAssignedPapers(s.getAssignedPapers());
             }
         });
-        ReviewerDto result = new ReviewerDto(reviewer.getEmail(), reviewer.getPassword(), reviewer.getPapersToReview(), reviewer.getRefusedPapers());
+        ReviewerDto result = new ReviewerDto(reviewer.getEmail(), reviewer.getPassword(), reviewer.getPapersToReview(), reviewer.getRefusedPapers(),reviewer.getAssignedPapers());
 
         result.setId(reviewer.getId());
 
@@ -211,6 +219,7 @@ public class ProposalController {
                 proposal.setListOfAuthors(s.getListOfAuthors());
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
+                proposal.setAssignedReviewers(s.getAssignedReviewers());
             }
         });
 
@@ -224,6 +233,7 @@ public class ProposalController {
                 reviewer.setPassword(s.getPassword());
                 reviewer.setPapersToReview(s.getPapersToReview());
                 reviewer.setRefusedPapers(s.getRefusedPapers());
+                reviewer.setAssignedPapers(s.getAssignedPapers());
             }
         });
 
@@ -250,6 +260,7 @@ public class ProposalController {
                 proposal.setListOfAuthors(s.getListOfAuthors());
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
+                proposal.setAssignedReviewers(s.getAssignedReviewers());
             }
         });
 
@@ -263,10 +274,52 @@ public class ProposalController {
                 reviewer.setPassword(s.getPassword());
                 reviewer.setPapersToReview(s.getPapersToReview());
                 reviewer.setRefusedPapers(s.getRefusedPapers());
+                reviewer.setAssignedPapers(s.getAssignedPapers());
             }
         });
 
         proposalService.refusePaper(proposalID,reviewerID,proposal,reviewer);
+    }
+
+    @PostMapping("/proposals/assign")
+    void assignProposal(
+            @RequestParam("proposalID") Integer proposalID,
+            @RequestParam("reviewerID") Integer reviewerID
+    )
+    {
+        List<Proposal> proposals = proposalService.getAllProposals();
+        Proposal proposal = new Proposal();
+        proposals.stream().forEach(s -> {
+            if (s.getId() == proposalID) {
+                proposal.setId(s.getId());
+                proposal.setAuthorID(s.getAuthorID());
+                proposal.setAbstractFileName(s.getAbstractFileName());
+                proposal.setPaperFileName(s.getPaperFileName());
+                proposal.setProposalName(s.getProposalName());
+                proposal.setKeyWords(s.getKeyWords());
+                proposal.setTopics(s.getTopics());
+                proposal.setListOfAuthors(s.getListOfAuthors());
+                proposal.setReviewers(s.getReviewers());
+                proposal.setRefusers(s.getRefusers());
+                proposal.setAssignedReviewers(s.getAssignedReviewers());
+            }
+        });
+
+        List<Reviewer> reviewers = proposalService.getAllReviewers();
+
+        Reviewer reviewer = new Reviewer();
+        reviewers.stream().forEach(s -> {
+            if (s.getId() == reviewerID) {
+                reviewer.setId(s.getId());
+                reviewer.setEmail(s.getEmail());
+                reviewer.setPassword(s.getPassword());
+                reviewer.setPapersToReview(s.getPapersToReview());
+                reviewer.setRefusedPapers(s.getRefusedPapers());
+                reviewer.setAssignedPapers(s.getAssignedPapers());
+            }
+        });
+
+        proposalService.assignPaper(proposalID,reviewerID,proposal,reviewer);
     }
 
 
