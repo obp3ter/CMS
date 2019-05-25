@@ -8,13 +8,19 @@ import cms.web.converter.ProposalConverter;
 import cms.web.converter.ReviewerConverter;
 import cms.web.dto.ProposalDto;
 import cms.web.dto.ReviewerDto;
+import cms.web.dto.StringDto;
 import cms.web.payload.UploadFileResponse;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,6 +34,13 @@ public class ProposalController {
     private ProposalConverter proposalConverter;
     @Autowired
     private ReviewerConverter  reviewerConverter;
+
+    @Value("${spring.datasource.url}")
+    private String dsURL;
+    @Value("${spring.datasource.username}")
+    private String dsUser;
+    @Value("${spring.datasource.password}")
+    private String dsPass;
 
     @PostMapping("/proposals/uploadfile")
     public List<UploadFileResponse> uploadAbstract( @RequestParam("proposalID") Integer aID,
@@ -322,6 +335,46 @@ public class ProposalController {
         proposalService.assignPaper(proposalID,reviewerID,proposal,reviewer);
     }
 
+    @GetMapping("proposals/deadlines")
+    StringDto getDeadlines(@RequestParam("deadlineName") String deadline) throws Exception{
+            Connection connection = DriverManager.getConnection(dsURL, dsUser, dsPass);
+            Statement statement = connection.createStatement();
+            ResultSet rs;
+            rs= statement.executeQuery("SELECT date from deadline where name = '"+deadline+"'");
+            rs.next();
+            String res=rs.getString("date");
+            System.out.println(rs.getString("date"));
+            return new StringDto(res);
+    }
+    @PostMapping("proposals/deadlines")
+    void updateDeadlines(@RequestParam("deadlineName") String deadline,
+                         @RequestParam("date") String date) throws Exception{
+            Connection connection = DriverManager.getConnection(dsURL, dsUser, dsPass);
+            Statement statement = connection.createStatement();
+            statement.execute("Update deadline set date = '"+date+"' where name = '"+deadline+"'");
+    }
+/*
+ry {
+            String url = "jdbc:msql://200.210.220.1:1114/Demo";
+            Connection conn = DriverManager.getConnection(url,"","");
+            Statement stmt = conn.createStatement();
+            ResultSet rs;
+
+            rs = stmt.executeQuery("SELECT Lname FROM Customers WHERE Snum = 2001");
+            while ( rs.next() ) {
+                String lastName = rs.getString("Lname");
+                System.out.println(lastName);
+            }
+            conn.close();
+        } catch (Exception e) {
+            System.err.println("Got an exception! ");
+            System.err.println(e.getMessage());
+        }
+    }
+}
+to post comments
+
+ */
 
 
 
