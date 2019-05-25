@@ -30,7 +30,10 @@ public class AuthorController {
 
 
     @RequestMapping(value = "/authors", method = RequestMethod.POST)
-    AuthorDto saveAuthor(@RequestParam("email") String email, @RequestParam("password") String password,@RequestParam("company") String company) {
+    AuthorDto saveAuthor(@RequestParam("email") String email,
+                         @RequestParam("password") String password,
+                         @RequestParam("company") String company
+    ) {
 
         AuthorDto dto = new AuthorDto(email,password,company);
 
@@ -73,7 +76,8 @@ public class AuthorController {
     }
 
     @RequestMapping(value = "/chairs", method = RequestMethod.POST)
-    ChairDto saveChair(@RequestParam("email") String email, @RequestParam("password") String password) {
+    ChairDto saveChair(@RequestParam("email") String email
+            , @RequestParam("password") String password) {
 
         ChairDto dto = new ChairDto(email,password);
 
