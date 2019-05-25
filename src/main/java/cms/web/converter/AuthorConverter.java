@@ -9,15 +9,15 @@ public class AuthorConverter
         extends UserConverter<Author, AuthorDto> {
     @Override
     public Author convertDtoToModel(AuthorDto dto) {
-        Author customer = new Author(dto.getEmail(),dto.getPassword(),dto.getCompany());
-        customer.setId(dto.getId());
-        return customer;
+        Author author = new Author(dto.getEmail(),dto.getPassword(),dto.getCompany());
+        author.setId(dto.getId());
+        return author;
     }
 
     @Override
-    public AuthorDto convertModelToDto(Author customer) {
-        AuthorDto dto = new AuthorDto(customer.getEmail(),customer.getPassword(),customer.getCompany());
-        dto.setId(customer.getId());
+    public AuthorDto convertModelToDto(Author author) {
+        AuthorDto dto = new AuthorDto(author.getEmail(),author.getPassword(),author.getCompany());
+        dto.setId(author.getId());
         return dto;
     }
 }

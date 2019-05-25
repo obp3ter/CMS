@@ -1,15 +1,15 @@
 package cms.web.dto;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
+@ToString
 public class ProposalDto {
     private Integer id;
     private Integer authorID;
@@ -19,18 +19,8 @@ public class ProposalDto {
     protected String keyWords;
     protected String topics;
     protected String listOfAuthors;
+    protected List<Integer> reviewers;
+    protected List<Integer> refusers;
 
-    @Override
-    public String toString() {
-        return "ProposalDto{" +
-                "id=" + id +
-                ", authorID=" + authorID +
-                ", abstractFileName='" + abstractFileName + '\'' +
-                ", paperFileName='" + paperFileName + '\'' +
-                ", proposalName='" + proposalName + '\'' +
-                ", keyWords='" + keyWords + '\'' +
-                ", topics='" + topics + '\'' +
-                ", listOfAuthors='" + listOfAuthors + '\'' +
-                '}';
-    }
+
 }

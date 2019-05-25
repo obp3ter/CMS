@@ -37,7 +37,7 @@ public class AuthorController {
     }
 
 
-    @RequestMapping(value = "/authors/", method = RequestMethod.GET)
+    @RequestMapping(value = "/authors", method = RequestMethod.GET)
     List<AuthorDto> getAuthor(@RequestParam(required = false, defaultValue = "-1") Integer id) {
 
         List<Author> authors = authorService.getAll();
@@ -54,18 +54,18 @@ public class AuthorController {
                 author.setPassword(s.getPassword());
             }
         });
-        AuthorDto result = new AuthorDto(author.getCompany(), author.getEmail(), author.getPassword());
+        AuthorDto result = new AuthorDto(author.getEmail(), author.getPassword(), author.getCompany());
 
         result.setId(author.getId());
 
-        var results = new ArrayList<AuthorDto>();
+        List<AuthorDto> results = new ArrayList<AuthorDto>();
         results.add(result);
         return results;
     }
 //    @RequestMapping(value = "/authors/{id}", method = RequestMethod.GET)
 //    AuthorDto getOneAuthor(@PathVariable Integer id) {
 //
-//        List<Author> authors = authorService.getAll();
+//        List<Author> authors = authorService.getAllProposals();
 //        Author author= new Author();
 //        authors.stream().forEach(s->{
 //            if(s.getId()==id)
@@ -98,7 +98,7 @@ public class AuthorController {
 //    public List<AuthorDto> getAuthors() {
 //
 //
-//        List<Author> students = authorService.getAll();
+//        List<Author> students = authorService.getAllProposals();
 //
 //
 //        return new ArrayList<>(authorConverter.convertModelsToDtos(students));
