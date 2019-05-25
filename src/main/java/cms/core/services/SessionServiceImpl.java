@@ -19,7 +19,8 @@ public class SessionServiceImpl implements SessionService {
     @Override
     @Transactional
     public void updateSession(Session s) {
-        sessionReposiotry.getOne(s.getId());
+        Session session = sessionReposiotry.getOne(s.getId());
+
 
     }
 
