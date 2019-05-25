@@ -19,6 +19,7 @@ public class SessionDto {
     Chair chair;
     Author speaker;
     List<Listener> listeners;
+    String paperFileName;
     Date date;
     String time;
 }

@@ -12,12 +12,12 @@ import java.util.stream.Collectors;
 public class SessionConverter {
 
     public Session convertDtoToModel(SessionDto dto){
-        Session session = new Session(dto.getId(),dto.getChair(),dto.getSpeaker(),dto.getListeners(),dto.getDate(),dto.getTime());
+        Session session = new Session(dto.getId(),dto.getChair(),dto.getSpeaker(),dto.getListeners(),dto.getPaperFileName(),dto.getDate(),dto.getTime());
         return session;
     }
 
     public SessionDto convertModelToDto(Session session){
-        SessionDto dto= new SessionDto(session.getId(),session.getChair(),session.getSpeaker(),session.getListeners(),session.getDate(),session.getTime());
+        SessionDto dto= new SessionDto(session.getId(),session.getChair(),session.getSpeaker(),session.getListeners(),session.getPaperFileName(),session.getDate(),session.getTime());
         return dto;
     }
     public Set<SessionDto> convertModelsToDtos(Collection<Session> models) {

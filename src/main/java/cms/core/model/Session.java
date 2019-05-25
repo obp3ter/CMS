@@ -23,6 +23,7 @@ public class Session {
     Author speaker;
     @OneToMany(cascade = CascadeType.ALL)
     List<Listener> listeners;
+    String paperFileName;
     Date date;
     String time;
 }
