@@ -83,7 +83,6 @@ public class ProposalServiceImpl implements ProposalService {
         result.setReviewers(proposal.getReviewers());
         result.setRefusers(proposal.getRefusers());
 
-
         return result;
     }
 
