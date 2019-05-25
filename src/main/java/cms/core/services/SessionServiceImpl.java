@@ -1,8 +1,10 @@
 package cms.core.services;
 
+import cms.core.model.Listener;
 import cms.core.model.Session;
 import cms.core.model.Review;
 import cms.core.model.Reviewer;
+import cms.core.repository.ListenerRepository;
 import cms.core.repository.SessionRepository;
 import cms.core.repository.ReviewerRepository;
 import lombok.var;
@@ -12,11 +14,14 @@ import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class SessionServiceImpl implements SessionService {
     @Autowired
     private SessionRepository sessionRepository;
+    @Autowired
+    private ListenerRepository listenerRepository;
 
     @Autowired
     ReviewerRepository reviewerRepository;
@@ -51,4 +56,20 @@ public class SessionServiceImpl implements SessionService {
 
         return result;
     }
+
+    @Override
+    @Transactional
+    public void joinSession(Integer sessionID, Integer listenerID) {
+        Listener listener= listenerRepository.getOne(listenerID);
+
+        Session session = getAllSessions().stream().filter(s -> s.getId() == sessionID).collect(Collectors.toList()).get(0);
+
+        List<Listener> listeners = session.getListeners();
+        listeners.add(listener);
+
+        session.setListeners(listeners);
+
+        updateSession(sessionID,session);
+    }
+
 }

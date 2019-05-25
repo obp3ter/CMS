@@ -4,6 +4,7 @@ import cms.core.model.Listener;
 import cms.core.model.Session;
 import cms.core.model.Reviewer;
 import cms.core.services.AuthorService;
+import cms.core.services.ChairService;
 import cms.core.services.FileStorageService;
 import cms.core.services.SessionService;
 import cms.web.converter.SessionConverter;
@@ -33,6 +34,8 @@ public class SessionController {
     @Autowired
     private SessionService sessionService;
     @Autowired
+    private ChairService chairService;
+    @Autowired
     private AuthorService authorService;
     @Autowired
     private SessionConverter sessionConverter;
@@ -40,6 +43,7 @@ public class SessionController {
 
     @RequestMapping(value = "/sessions", method = RequestMethod.POST)
     SessionDto saveSession(@RequestParam("speaker") Integer speaker,
+                           @RequestParam("chair") Integer chair,
                            @RequestParam("paperFileName") String paperFileName,
                            @RequestParam("time")String time,
                            @RequestParam("date")String date) throws Exception
@@ -47,7 +51,8 @@ public class SessionController {
 
 
 
-        SessionDto dto = new SessionDto(0,null,
+        SessionDto dto = new SessionDto(0,
+                chairService.getAll().stream().filter(a -> a.getId().equals(chair)).collect(Collectors.toList()).get(0),
                 authorService.getAll().stream().filter(a -> a.getId().equals(speaker)).collect(Collectors.toList()).get(0),
                 new ArrayList<Listener>(),
                 paperFileName,
@@ -100,4 +105,14 @@ public class SessionController {
         results.add(result);
         return results;
     }
+
+    @PostMapping("listeners/join")
+    void joinSession(@RequestParam("sessionID") Integer sessionID,
+                     @RequestParam("listenerID") Integer listenerID
+
+                     )
+    {
+        sessionService.joinSession(sessionID,listenerID);
+    }
+
 }

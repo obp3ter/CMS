@@ -11,4 +11,7 @@ public interface SessionService {
     Session saveSession(Session session);
 
     Session updateSession(Integer id, Session session);
+
+    void joinSession(Integer sessionID, Integer listenerID);
+
 }
