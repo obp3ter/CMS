@@ -24,4 +24,5 @@ public interface ProposalService {
 
     void assignPaper(Integer ProposalID, Integer ReviewerID, Proposal proposal, Reviewer reviewer);
 
+    void reviewPaper(Integer ProposalID, Proposal proposal, Integer reviewerID,Integer grade);
 }

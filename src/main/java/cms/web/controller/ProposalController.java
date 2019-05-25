@@ -105,7 +105,7 @@ public class ProposalController {
                              )
     {
 
-        ProposalDto dto = new ProposalDto(pID,aID,"","",proposalName,keyWords,topics,listOfReviewers,reviewers,refusers,assignedReviewers);
+        ProposalDto dto = new ProposalDto(pID,aID,"","",proposalName,keyWords,topics,listOfReviewers,reviewers,refusers,assignedReviewers,new ArrayList<>());
 
         Proposal saved = this.proposalService.saveProposal(
                 proposalConverter.convertDtoToModel(dto)
@@ -139,6 +139,7 @@ public class ProposalController {
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
                 proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
             }
         });
         ProposalDto result = new ProposalDto(proposal.getId(),
@@ -151,7 +152,8 @@ public class ProposalController {
                 proposal.getListOfAuthors(),
                 proposal.getReviewers(),
                 proposal.getRefusers(),
-                proposal.getAssignedReviewers()
+                proposal.getAssignedReviewers(),
+                proposal.getReviews()
         );
 
         result.setId(proposal.getId());
@@ -233,6 +235,7 @@ public class ProposalController {
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
                 proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
             }
         });
 
@@ -274,6 +277,7 @@ public class ProposalController {
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
                 proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
             }
         });
 
@@ -315,6 +319,7 @@ public class ProposalController {
                 proposal.setReviewers(s.getReviewers());
                 proposal.setRefusers(s.getRefusers());
                 proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
             }
         });
 
@@ -349,35 +354,39 @@ public class ProposalController {
     @PostMapping("proposals/deadlines")
     void updateDeadlines(@RequestParam("deadlineName") String deadline,
                          @RequestParam("date") String date) throws Exception{
-            Connection connection = DriverManager.getConnection(dsURL, dsUser, dsPass);
-            Statement statement = connection.createStatement();
-            statement.execute("Update deadline set date = '"+date+"' where name = '"+deadline+"'");
+        Connection connection = DriverManager.getConnection(dsURL, dsUser, dsPass);
+        Statement statement = connection.createStatement();
+        statement.execute("Update deadline set date = '"+date+"' where name = '"+deadline+"'");
     }
-/*
-ry {
-            String url = "jdbc:msql://200.210.220.1:1114/Demo";
-            Connection conn = DriverManager.getConnection(url,"","");
-            Statement stmt = conn.createStatement();
-            ResultSet rs;
 
-            rs = stmt.executeQuery("SELECT Lname FROM Customers WHERE Snum = 2001");
-            while ( rs.next() ) {
-                String lastName = rs.getString("Lname");
-                System.out.println(lastName);
+    @PostMapping("/proposals/review")
+    void reviewProposal(
+            @RequestParam("proposalID") Integer proposalID,
+            @RequestParam("reviewerID") Integer reviewerID,
+            @RequestParam("grade") Integer grade
+    )
+    {
+        List<Proposal> proposals = proposalService.getAllProposals();
+        Proposal proposal = new Proposal();
+        proposals.stream().forEach(s -> {
+            if (s.getId() == proposalID) {
+                proposal.setId(s.getId());
+                proposal.setAuthorID(s.getAuthorID());
+                proposal.setAbstractFileName(s.getAbstractFileName());
+                proposal.setPaperFileName(s.getPaperFileName());
+                proposal.setProposalName(s.getProposalName());
+                proposal.setKeyWords(s.getKeyWords());
+                proposal.setTopics(s.getTopics());
+                proposal.setListOfAuthors(s.getListOfAuthors());
+                proposal.setReviewers(s.getReviewers());
+                proposal.setRefusers(s.getRefusers());
+                proposal.setAssignedReviewers(s.getAssignedReviewers());
+                proposal.setReviews(s.getReviews());
             }
-            conn.close();
-        } catch (Exception e) {
-            System.err.println("Got an exception! ");
-            System.err.println(e.getMessage());
-        }
+        });
+
+        proposalService.reviewPaper(proposalID,proposal,reviewerID,grade);
     }
-}
-to post comments
-
- */
-
-
-
 
 
 }

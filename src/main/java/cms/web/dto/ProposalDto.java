@@ -1,6 +1,7 @@
 package cms.web.dto;
 
 
+import cms.core.model.Review;
 import lombok.*;
 
 import java.util.List;
@@ -22,6 +23,7 @@ public class ProposalDto {
     protected List<Integer> reviewers;
     protected List<Integer> refusers;
     protected List<Integer> assignedReviewers;
+    protected  List<Review> reviews;
 
 
 }
