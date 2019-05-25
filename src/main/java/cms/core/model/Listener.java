@@ -14,6 +14,7 @@ import javax.persistence.Table;
 @Table(name="listeners")
 @ToString(callSuper = true)
 @Builder
+public
 class Listener extends User {
     String email;
     String password;

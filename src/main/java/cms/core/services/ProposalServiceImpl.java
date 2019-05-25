@@ -57,6 +57,7 @@ public class ProposalServiceImpl implements ProposalService {
     {
         Optional<Reviewer> optionalReviewer = reviewerRepository.findById(id);
         Reviewer result = optionalReviewer.orElse(reviewer);
+        result=reviewerRepository.findById(id).orElse(reviewer);
         result.setId(reviewer.getId());
         result.setEmail(reviewer.getEmail());
         result.setPassword(reviewer.getPassword());
