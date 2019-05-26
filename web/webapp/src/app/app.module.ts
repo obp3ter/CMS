@@ -22,6 +22,7 @@ import { UpdateProposalFileComponent } from './proposal/update-proposal-file/upd
 import { LoginListenerComponent } from './login/login-listener/login-listener.component';
 import { LoginReviewerComponent } from './login/login-reviewer/login-reviewer.component';
 import { LoginChairComponent } from './login/login-chair/login-chair.component';
+import { ReviewerComponent } from './reviewer/reviewer.component';
 
 
 
@@ -44,6 +45,7 @@ import { LoginChairComponent } from './login/login-chair/login-chair.component';
     LoginListenerComponent,
     LoginReviewerComponent,
     LoginChairComponent,
+    ReviewerComponent,
 
   ],
   imports: [

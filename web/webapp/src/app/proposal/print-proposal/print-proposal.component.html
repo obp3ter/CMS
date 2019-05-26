@@ -7,6 +7,10 @@
     <th>Abstract</th>
     <th>Paper</th>
     <th>ListOfAuthors</th>
+    <ng-container *ngIf="reviewerShow()">
+      <th></th>
+      <th></th>
+    </ng-container>
 <!--    <th></th>-->
 <!--    <th></th>-->
   </tr>
@@ -15,15 +19,32 @@
     <td> {{proposal.proposalName}}</td>
     <td> {{proposal.keyWords}}</td>
     <td> {{proposal.topics}}</td>
-    <td><a href="http://localhost:8080/downloadFile/{{proposal.abstractFileName}}">{{proposal.abstractFileName}}</a> <button (click)="updateFile(proposal.id ,'abstract')"
-                                             class="btn btn-primary">
-      Upload Abstract
-    </button></td>
-    <td><a href="http://localhost:8080/downloadFile/{{proposal.paperFileName}}"> {{proposal.paperFileName}}</a> <button (click)="updateFile(proposal.id, 'paper')"
+    <td><a href="http://localhost:8080/downloadFile/{{proposal.abstractFileName}}">{{proposal.abstractFileName}}</a>
+    <ng-container *ngIf="authorShow()">
+      <button (click)="updateFile(proposal.id ,'abstract')"
+              class="btn btn-primary">
+        Upload Abstract
+      </button>
+    </ng-container>
+    </td>
+    <td><a href="http://localhost:8080/downloadFile/{{proposal.paperFileName}}"> {{proposal.paperFileName}}</a>
+      <ng-container *ngIf="authorShow()">
+      <button (click)="updateFile(proposal.id, 'paper')"
                                            class="btn btn-primary">
       Upload Paper
-    </button></td>
+    </button>
+      </ng-container></td>
     <td>{{proposal.listOfAuthors}}</td>
+    <ng-container *ngIf="reviewerShow()">
+      <td> <button (click)="bidProposal(proposal.id)"
+                   class="btn btn-primary">
+        Accept Paper
+      </button></td>
+      <td> <button (click)="refuseProposal(proposal.id)"
+                   class="btn btn-primary">
+        Refuse Paper
+      </button></td>
+    </ng-container>
 <!--    <td> <button (click)="deleteProposal(proposal.id)"-->
 <!--                 class="btn btn-primary">-->
 <!--      Delete Proposal-->

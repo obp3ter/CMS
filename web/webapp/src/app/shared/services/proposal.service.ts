@@ -23,6 +23,11 @@ export class ProposalService {
     return this.httpClient.get<Array<Proposal>>(this.path+"?authorId="+id)
 
   }
+  getProposalByReviewerId(id):Observable<Array<Proposal>>
+  {
+    return this.httpClient.get<Array<Proposal>>(this.path+"?reviewerId="+id)
+
+  }
   updateFiles(data)
   {
     this.httpClient.post(`${this.path}/uploadfile`, data)

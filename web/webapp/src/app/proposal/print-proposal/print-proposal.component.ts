@@ -24,7 +24,11 @@ export class PrintProposalComponent implements OnInit {
     if(sessionStorage.getItem("id")=="undefined")
       this.getAllProposals();
     else
-      this.getAllbyId();
+      if(sessionStorage.getItem("userType")=="author")
+      this.getAllbyIdAuthor();
+      else if(sessionStorage.getItem("userType")=="reviewer") {
+        this.getAllbyIdReviewer();
+      }
   }
 
   getAllProposals(): void {
@@ -32,8 +36,13 @@ export class PrintProposalComponent implements OnInit {
       .subscribe(stud => this.proposals = stud["proposals"]);
     console.log(this.proposals)
   }
-  getAllbyId(): void {
+  getAllbyIdAuthor(): void {
     this.proposalService.getProposalByAuthorId(toNumbers(sessionStorage.getItem("id"))[0])
+      .subscribe(stud => this.proposals = stud);
+    console.log(this.proposals)
+  }
+  getAllbyIdReviewer(): void {
+    this.proposalService.getProposalByReviewerId(toNumbers(sessionStorage.getItem("id"))[0])
       .subscribe(stud => this.proposals = stud);
     console.log(this.proposals)
   }
@@ -48,6 +57,22 @@ export class PrintProposalComponent implements OnInit {
     sessionStorage.setItem("whichFile",wf);
     this.router.navigate(['/proposals/upload'], { skipLocationChange: true});
 
+  }
+  reviewerShow()
+  {
+    return sessionStorage.getItem("userType")=="reviewer";
+  }
+  authorShow()
+  {
+    return sessionStorage.getItem("userType")=="author";
+  }
+  bidProposal(id)
+  {
+    ;
+  }
+  refuseProposal(id)
+  {
+    ;
   }
 
   onSelect(proposal): void {
