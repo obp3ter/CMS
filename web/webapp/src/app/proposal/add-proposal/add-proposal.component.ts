@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import {ProposalService} from "@app/shared/services/proposal.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-add-proposal',
@@ -10,7 +11,7 @@ import {ProposalService} from "@app/shared/services/proposal.service";
 export class AddProposalComponent implements OnInit {
 
   angForm: FormGroup;
-  constructor(private fb: FormBuilder,public proposalService: ProposalService) {
+  constructor(private fb: FormBuilder,public proposalService: ProposalService,  private router: Router) {
     this.createForm();
   }
 
@@ -25,6 +26,7 @@ export class AddProposalComponent implements OnInit {
 
   addProposal(proposal_name, proposal_keywords, proposal_topics, proposal_listOfAuthors) {
       this.proposalService.addProposal(proposal_name, proposal_keywords, proposal_topics, proposal_listOfAuthors);
+    this.router.navigate(['/author'], { skipLocationChange: true});
   }
 
 

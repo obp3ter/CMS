@@ -19,6 +19,9 @@ import { AuthorComponent } from './author/author.component';
 import { AddProposalComponent } from './proposal/add-proposal/add-proposal.component';
 import { PrintProposalComponent } from './proposal/print-proposal/print-proposal.component';
 import { UpdateProposalFileComponent } from './proposal/update-proposal-file/update-proposal-file.component';
+import { LoginListenerComponent } from './login/login-listener/login-listener.component';
+import { LoginReviewerComponent } from './login/login-reviewer/login-reviewer.component';
+import { LoginChairComponent } from './login/login-chair/login-chair.component';
 
 
 
@@ -38,6 +41,9 @@ import { UpdateProposalFileComponent } from './proposal/update-proposal-file/upd
     AddProposalComponent,
     PrintProposalComponent,
     UpdateProposalFileComponent,
+    LoginListenerComponent,
+    LoginReviewerComponent,
+    LoginChairComponent,
 
   ],
   imports: [

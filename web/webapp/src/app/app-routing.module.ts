@@ -9,6 +9,10 @@ import {SucessComponent} from "@app/shared/sucess/sucess.component";
 import {AuthorComponent} from "@app/author/author.component";
 import {AddProposalComponent} from "@app/proposal/add-proposal/add-proposal.component";
 import {UpdateProposalFileComponent} from "@app/proposal/update-proposal-file/update-proposal-file.component";
+import {LoginChairComponent} from "@app/login/login-chair/login-chair.component";
+import {LoginListenerComponent} from "@app/login/login-listener/login-listener.component";
+import {LoginReviewerComponent} from "@app/login/login-reviewer/login-reviewer.component";
+import {LoginComponent} from "@app/login/login.component";
 
 const routes: Routes = [
   {path: 'books', component: BooksComponent},
@@ -16,6 +20,10 @@ const routes: Routes = [
   {path: 'books/update-book/:id', component: UpdateBookComponent},
   {path: 'register/register-author', component: RegisterAuthorComponent},
   {path: 'login/login-author', component:LoginAuthorComponent},
+  {path: 'login/login-chair', component:LoginChairComponent},
+  {path: 'login/login-reviewer', component:LoginReviewerComponent},
+  {path: 'login/login-listener', component:LoginListenerComponent},
+  {path: 'login', component:LoginComponent},
   {path: 'sucess', component:SucessComponent},
   {path: 'author', component:AuthorComponent},
   {path: 'proposals/add-proposal', component: AddProposalComponent},
