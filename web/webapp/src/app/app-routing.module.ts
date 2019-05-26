@@ -13,6 +13,7 @@ import {LoginChairComponent} from "@app/login/login-chair/login-chair.component"
 import {LoginListenerComponent} from "@app/login/login-listener/login-listener.component";
 import {LoginReviewerComponent} from "@app/login/login-reviewer/login-reviewer.component";
 import {LoginComponent} from "@app/login/login.component";
+import {ReviewerComponent} from "@app/reviewer/reviewer.component";
 
 const routes: Routes = [
   {path: 'books', component: BooksComponent},
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path: 'sucess', component:SucessComponent},
   {path: 'author', component:AuthorComponent},
   {path: 'proposals/add-proposal', component: AddProposalComponent},
-  {path: 'proposals/upload', component:UpdateProposalFileComponent}
+  {path: 'proposals/upload', component:UpdateProposalFileComponent},
+  {path: 'reviewer',component: ReviewerComponent}
 ];
 
 @NgModule({

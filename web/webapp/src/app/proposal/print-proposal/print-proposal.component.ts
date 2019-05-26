@@ -68,11 +68,13 @@ export class PrintProposalComponent implements OnInit {
   }
   bidProposal(id)
   {
-    ;
+    this.proposalService.bidProposal(id);
+    this.router.navigate(['/reviewer'], { skipLocationChange: true});
   }
   refuseProposal(id)
   {
-    ;
+    this.proposalService.refuseProposal(id);
+    this.router.navigate(['/reviewer'], { skipLocationChange: true});
   }
 
   onSelect(proposal): void {

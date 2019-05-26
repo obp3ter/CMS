@@ -45,6 +45,22 @@ export class ProposalService {
     this.httpClient.post(`${this.path}`, formData)
       .subscribe(res => console.log('Done'));
   }
+  bidProposal(id)
+  {
+    const formData: FormData = new FormData();
+    formData.append("proposalID",id.toString())
+    formData.append("reviewerID",sessionStorage.getItem("id"))
+    this.httpClient.post(`${this.path}/bid`, formData)
+      .subscribe(res => console.log('Done'));
+  }
+  refuseProposal(id)
+  {
+    const formData: FormData = new FormData();
+    formData.append("proposalID",id.toString())
+    formData.append("reviewerID",sessionStorage.getItem("id"))
+    this.httpClient.post(`${this.path}/refuse`, formData)
+      .subscribe(res => console.log('Done'));
+  }
 
   // @RequestParam("authorID") Integer aID,
   // @RequestParam("proposalName") String proposalName,
