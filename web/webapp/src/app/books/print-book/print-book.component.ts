@@ -22,7 +22,7 @@ export class PrintBookComponent implements OnInit {
 
   getAllBooks(): void {
     this.bookService.getAllBooks()
-      .subscribe(stud => this.books = stud["books"]);
+        .subscribe(stud => this.books = stud["books"]);
   }
 
   deleteBook(book_id):void

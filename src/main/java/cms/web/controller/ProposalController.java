@@ -72,9 +72,9 @@ public class ProposalController {
 
         var result = new ArrayList<UploadFileResponse>();
 
-        if(which=="abstract")
+        if(which.equals("abstract"))
             proposal.setAbstractFileName(file.getOriginalFilename());
-        else if(which=="paper")
+        else if(which.equals("paper"))
             proposal.setPaperFileName(file.getOriginalFilename());
         else
             throw new Exception("error");
@@ -93,15 +93,15 @@ public class ProposalController {
     }
 
     @RequestMapping(value = "/proposals", method = RequestMethod.POST)
-    ProposalDto saveProposal(@RequestParam("proposalID") Integer aID,
-                             @RequestParam("proposalID") Integer pID,
+    ProposalDto saveProposal(@RequestParam(value = "proposalID",required = false, defaultValue = "0") Integer pID,
+                             @RequestParam("authorID") Integer aID,
                              @RequestParam("proposalName") String proposalName,
                              @RequestParam("keyWords") String keyWords,
                              @RequestParam("topics") String topics,
-                             @RequestParam("listOfReviewers") String listOfReviewers,
-                             @RequestParam("listOfReviewers") List<Integer> reviewers,
-                             @RequestParam("listOfRefusers") List<Integer> refusers,
-                             @RequestParam("assignedReviewers") List<Integer> assignedReviewers
+                             @RequestParam(value = "listOfReviewers",required = false,defaultValue = "") String listOfReviewers,
+                             @RequestParam(value = "listOfReviewers",required = false, defaultValue = "") List<Integer> reviewers,
+                             @RequestParam(value = "listOfRefusers",required = false, defaultValue = "") List<Integer> refusers,
+                             @RequestParam(value = "assignedReviewers",required = false, defaultValue = "") List<Integer> assignedReviewers
                              )
     {
 
@@ -117,17 +117,18 @@ public class ProposalController {
     }
 
     @RequestMapping(value = "/proposals", method = RequestMethod.GET)
-    List<ProposalDto> getProposal(@RequestParam(required = false, defaultValue = "-1") Integer id)
+    List<ProposalDto> getProposal(@RequestParam(required = false, defaultValue = "-1") Integer id,
+                                  @RequestParam(required = false, defaultValue = "-1") Integer authorId)
     {
 
         List<Proposal> proposals = proposalService.getAllProposals();
 
-        if (id == -1)
+        if (id == -1 && authorId == -1)
             return new ArrayList<>(proposalConverter.convertModelsToDtos(proposals));
 
         Proposal proposal = new Proposal();
         proposals.stream().forEach(s -> {
-            if (s.getId() == id) {
+            if (s.getId() == id || s.getAuthorID() == authorId) {
                 proposal.setId(s.getId());
                 proposal.setAuthorID(s.getAuthorID());
                 proposal.setAbstractFileName(s.getAbstractFileName());

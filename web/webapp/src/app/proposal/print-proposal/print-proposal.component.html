@@ -1,0 +1,41 @@
+<br>
+<!--<div *ngIf="selectedProposal && proposals.indexOf(selectedProposal) != -1">-->
+<!--<label>-->
+<!--Proposal {{selectedProposal.name}} was selected!-->
+<!--</label>-->
+<!--&lt;!&ndash;<a routerLink="/proposals/details/{{selectedProposal.id}}">&ndash;&gt;-->
+<!--&lt;!&ndash;<button>Details</button>&ndash;&gt;-->
+<!--&lt;!&ndash;</a>&ndash;&gt;-->
+<!--</div>-->
+<br>
+<button style="visibility: hidden"> Details</button>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Keywords</th>
+    <th>Topics</th>
+    <th>Abstract</th>
+    <th>Paper</th>
+<!--    <th></th>-->
+<!--    <th></th>-->
+  </tr>
+  <tr *ngFor="let proposal of proposals"
+      [class.selected]="proposal===selectedProposal">
+    <td> {{proposal.proposalName}}</td>
+    <td> {{proposal.keyWords}}</td>
+    <td> {{proposal.topics}}</td>
+    <td>{{proposal.abstractFileName}}<button (click)="updateFile(proposal.id ,'abstract')"
+                                             class="btn btn-primary">
+      Update abstract
+    </button></td>
+    <td> {{proposal.paperFileName}}<button (click)="updateFile(proposal.id, 'paper')"
+                                           class="btn btn-primary">
+      Update abstract
+    </button></td>
+<!--    <td> <button (click)="deleteProposal(proposal.id)"-->
+<!--                 class="btn btn-primary">-->
+<!--      Delete Proposal-->
+<!--    </button></td>-->
+<!--    <td><a href="/proposals/update-proposal/{{proposal.id}}">Update Proposal</a></td>-->
+  </tr>
+</table>

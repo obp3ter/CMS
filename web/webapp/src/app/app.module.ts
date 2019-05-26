@@ -15,6 +15,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterAuthorComponent } from './register/register-author/register-author.component';
 import { LoginAuthorComponent } from './login/login-author/login-author.component';
 import { SucessComponent } from './shared/sucess/sucess.component';
+import { AuthorComponent } from './author/author.component';
+import { AddProposalComponent } from './proposal/add-proposal/add-proposal.component';
+import { PrintProposalComponent } from './proposal/print-proposal/print-proposal.component';
+import { UpdateProposalFileComponent } from './proposal/update-proposal-file/update-proposal-file.component';
 
 
 
@@ -30,6 +34,10 @@ import { SucessComponent } from './shared/sucess/sucess.component';
     RegisterAuthorComponent,
     LoginAuthorComponent,
     SucessComponent,
+    AuthorComponent,
+    AddProposalComponent,
+    PrintProposalComponent,
+    UpdateProposalFileComponent,
 
   ],
   imports: [

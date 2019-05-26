@@ -28,13 +28,13 @@ export class LoginAuthorComponent implements OnInit {
     this.authorService.getAuthorByEmail(author_email).subscribe(res =>
     {
       this.author=(res[0]);
-      console.log(this.author)
-
-      console.log("got:",this.author);
       if(this.author.password == author_password)
       {
         console.log("OK!");
-        window.open('/sucess','_self');
+        //window.open('/sucess','_self');
+        sessionStorage.setItem("id", this.author.id.toString());
+        sessionStorage.setItem("userType", "author");
+        this.router.navigate(['/author'], { skipLocationChange: true});
 
       }
     });
