@@ -29,12 +29,13 @@ export class ProposalService {
       .subscribe(res => console.log('Done'));
   }
 
-  addProposal(proposal_name, proposal_keywords, proposal_topics) {
+  addProposal(proposal_name, proposal_keywords, proposal_topics, proposal_listOfAuthors) {
     const formData: FormData = new FormData();
     formData.append("authorID",sessionStorage.getItem("id"));
     formData.append("proposalName",proposal_name);
     formData.append("keyWords",proposal_keywords);
     formData.append("topics",proposal_topics);
+    formData.append("listOfAuthors",proposal_listOfAuthors);
     console.log(formData);
     this.httpClient.post(`${this.path}`, formData)
       .subscribe(res => console.log('Done'));

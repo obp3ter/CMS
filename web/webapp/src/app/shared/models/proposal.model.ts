@@ -6,7 +6,7 @@ export class Proposal{
   proposalName:string;
   keyWords:string;
   topics:string;
-  ListOfAuthors:string;
+  listOfAuthors:string;
   reviewers:number[];
   refusers:number[];
   assignedReviewers:number[];

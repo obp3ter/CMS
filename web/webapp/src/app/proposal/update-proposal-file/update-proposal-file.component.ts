@@ -1,6 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {ProposalService} from "@app/shared/services/proposal.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-update-proposal-file',
@@ -13,7 +14,7 @@ export class UpdateProposalFileComponent implements OnInit {
 
   @ViewChild('fileInput') fileInput: ElementRef;
 
-  constructor(private fb: FormBuilder,public proposalService:ProposalService) {
+  constructor(private fb: FormBuilder,public proposalService:ProposalService,  private router: Router) {
     this.createForm();
   }
 
@@ -46,9 +47,10 @@ export class UpdateProposalFileComponent implements OnInit {
 
     setTimeout(() => {
       // FormData cannot be inspected (see "Key difference"), hence no need to log it here
-      alert('done!');
+      //alert('done!');
       this.loading = false;
     }, 1000);
+    this.router.navigate(['/author'], { skipLocationChange: true});
   }
 
   clearFile() {

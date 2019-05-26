@@ -18,12 +18,13 @@ export class AddProposalComponent implements OnInit {
     this.angForm = this.fb.group({
       proposal_name: ['', Validators.required ],
       proposal_keywords: ['', Validators.required ],
-      proposal_topics: ['', Validators.required ]
+      proposal_topics: ['', Validators.required ],
+      proposal_listOfAuthors: ['', Validators.required ]
     });
   }
 
-  addProposal(proposal_name, proposal_keywords, proposal_topics) {
-      this.proposalService.addProposal(proposal_name, proposal_keywords, proposal_topics);
+  addProposal(proposal_name, proposal_keywords, proposal_topics, proposal_listOfAuthors) {
+      this.proposalService.addProposal(proposal_name, proposal_keywords, proposal_topics, proposal_listOfAuthors);
   }
 
 

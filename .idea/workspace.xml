@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a25e3657-03e6-4591-9cd3-a620e571d674" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/webapp/src/app/shared/models/proposal.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/author/author.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/author/author.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/shared/models/proposal.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/shared/models/proposal.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -131,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+            <state relative-caret-position="408">
+              <caret line="30" column="84" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="84" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
               </folding>
@@ -141,10 +140,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.html">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/proposal.model.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="85">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -152,31 +151,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="42" column="72" lean-forward="true" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="72" />
+            <state relative-caret-position="331">
+              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
               <folding>
                 <element signature="e#0#71#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getProposal#0;class#ProposalController#0" />
-                <element signature="method#saveReviewer#0;class#ProposalController#0" />
-                <element signature="method#getReviewer#0;class#ProposalController#0" />
-                <element signature="method#bidOnProposal#0;class#ProposalController#0" />
-                <element signature="method#refuseProposal#0;class#ProposalController#0" />
-                <element signature="method#assignProposal#0;class#ProposalController#0" />
-                <element signature="method#getDeadlines#0;class#ProposalController#0" />
-                <element signature="method#updateDeadlines#0;class#ProposalController#0" />
-                <element signature="method#reviewProposal#0;class#ProposalController#0" />
               </folding>
             </state>
           </provider>
@@ -185,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+            <state relative-caret-position="483">
+              <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -195,42 +173,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.ts">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="98" selection-start-line="14" selection-start-column="73" selection-end-line="14" selection-end-column="98" />
+            <state relative-caret-position="323">
+              <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-                <element signature="n#!!block;n#sortEm#0;n#PrintBookComponent#0" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -244,6 +197,36 @@
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -285,8 +268,9 @@
       <find>author_company</find>
       <find>_company</find>
       <find>book</find>
-      <find>Book</find>
+      <find>topic</find>
       <find>avatar</find>
+      <find>Book</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -311,8 +295,10 @@
       <replace>proposal_topics</replace>
       <replace>_topics</replace>
       <replace>proposal</replace>
-      <replace>Proposal</replace>
+      <replace>listOfAuthors</replace>
       <replace>myFile</replace>
+      <replace>Proposal</replace>
+      <replace>List Of Authors</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -370,18 +356,18 @@
         <option value="$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/models/proposal.model.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts" />
         <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/models/proposal.model.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html" />
       </list>
     </option>
   </component>
@@ -735,7 +721,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CMSServer">
+  <component name="RunManager" selected="npm.Angular CLI">
     <configuration name="CMSServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="server.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cms.App" />
@@ -912,11 +898,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558877627451</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="webappstart">
+      <created>1558886711530</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1558886711530</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92609000" />
+    <option name="totallyTimeSpent" value="94484000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -931,7 +924,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19083156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19083156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -940,7 +933,7 @@
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3281412" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.4978678" visible="true" weight="0.33125648" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.4978678" visible="true" weight="0.33125648" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -987,13 +980,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="webappstart" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/core/model/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/core/services/ListenerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1232,13 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
@@ -1253,13 +1232,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1283,37 +1255,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/proposal.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1327,16 +1272,6 @@
           <folding>
             <element signature="e#0#48#0" expanded="true" />
             <element signature="n#!!block;n#sortEm#0;n#PrintBookComponent#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1358,46 +1293,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="42" column="72" lean-forward="true" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -1414,6 +1309,100 @@
             <element signature="method#updateDeadlines#0;class#ProposalController#0" />
             <element signature="method#reviewProposal#0;class#ProposalController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="78" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/proposal.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="84" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="68" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
         </state>
       </provider>
     </entry>

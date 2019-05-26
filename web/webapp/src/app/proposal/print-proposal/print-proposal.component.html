@@ -1,13 +1,3 @@
-<br>
-<!--<div *ngIf="selectedProposal && proposals.indexOf(selectedProposal) != -1">-->
-<!--<label>-->
-<!--Proposal {{selectedProposal.name}} was selected!-->
-<!--</label>-->
-<!--&lt;!&ndash;<a routerLink="/proposals/details/{{selectedProposal.id}}">&ndash;&gt;-->
-<!--&lt;!&ndash;<button>Details</button>&ndash;&gt;-->
-<!--&lt;!&ndash;</a>&ndash;&gt;-->
-<!--</div>-->
-<br>
 <button style="visibility: hidden"> Details</button>
 <table>
   <tr>
@@ -16,6 +6,7 @@
     <th>Topics</th>
     <th>Abstract</th>
     <th>Paper</th>
+    <th>ListOfAuthors</th>
 <!--    <th></th>-->
 <!--    <th></th>-->
   </tr>
@@ -24,14 +15,15 @@
     <td> {{proposal.proposalName}}</td>
     <td> {{proposal.keyWords}}</td>
     <td> {{proposal.topics}}</td>
-    <td>{{proposal.abstractFileName}}<button (click)="updateFile(proposal.id ,'abstract')"
+    <td><a href="http://localhost:8080/downloadFile/{{proposal.abstractFileName}}">{{proposal.abstractFileName}}</a> <button (click)="updateFile(proposal.id ,'abstract')"
                                              class="btn btn-primary">
-      Update abstract
+      Upload Abstract
     </button></td>
-    <td> {{proposal.paperFileName}}<button (click)="updateFile(proposal.id, 'paper')"
+    <td><a href="http://localhost:8080/downloadFile/{{proposal.paperFileName}}"> {{proposal.paperFileName}}</a> <button (click)="updateFile(proposal.id, 'paper')"
                                            class="btn btn-primary">
-      Update abstract
+      Upload Paper
     </button></td>
+    <td>{{proposal.listOfAuthors}}</td>
 <!--    <td> <button (click)="deleteProposal(proposal.id)"-->
 <!--                 class="btn btn-primary">-->
 <!--      Delete Proposal-->
