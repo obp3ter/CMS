@@ -20,7 +20,7 @@
     <td> {{proposal.keyWords}}</td>
     <td> {{proposal.topics}}</td>
     <td><a href="http://localhost:8080/downloadFile/{{proposal.abstractFileName}}">{{proposal.abstractFileName}}</a>
-    <ng-container *ngIf="authorShow()">
+    <ng-container *ngIf="(authorShow() && isBeforeDeadline('abstracts'))">
       <button (click)="updateFile(proposal.id ,'abstract')"
               class="btn btn-primary">
         Upload Abstract
@@ -28,19 +28,19 @@
     </ng-container>
     </td>
     <td><a href="http://localhost:8080/downloadFile/{{proposal.paperFileName}}"> {{proposal.paperFileName}}</a>
-      <ng-container *ngIf="authorShow()">
+      <ng-container *ngIf="(authorShow() && isBeforeDeadline('papers'))">
       <button (click)="updateFile(proposal.id, 'paper')"
                                            class="btn btn-primary">
       Upload Paper
     </button>
       </ng-container></td>
     <td>{{proposal.listOfAuthors}}</td>
-    <ng-container *ngIf="reviewerShow()">
+    <ng-container *ngIf="(reviewerShow()  && isBeforeDeadline('bidding'))">
       <td> <button (click)="bidProposal(proposal.id)"
                    class="btn btn-primary">
         Accept Paper
       </button></td>
-      <td> <button (click)="refuseProposal(proposal.id)"
+      <td> <button (click)="(refuseProposal(proposal.id) && isBeforeDeadline('bidding'))"
                    class="btn btn-primary">
         Refuse Paper
       </button></td>

@@ -29,6 +29,7 @@ export class PrintProposalComponent implements OnInit {
       else if(sessionStorage.getItem("userType")=="reviewer") {
         this.getAllbyIdReviewer();
       }
+      this.isBeforeDeadline('abstracts')
   }
 
   getAllProposals(): void {
@@ -46,11 +47,15 @@ export class PrintProposalComponent implements OnInit {
       .subscribe(stud => this.proposals = stud);
     console.log(this.proposals)
   }
-
   // deleteProposal(proposal_id):void
   // {
   //   this.proposalService.deleteProposal(proposal_id);
   // }
+  isBeforeDeadline(name)
+  {
+    console.log(name)
+    return this.proposalService.isBeforeDeadline(name);
+  }
   updateFile(id,wf)
   {
     sessionStorage.setItem("proposalID",id.toString());
@@ -66,6 +71,8 @@ export class PrintProposalComponent implements OnInit {
   {
     return sessionStorage.getItem("userType")=="author";
   }
+
+
   bidProposal(id)
   {
     this.proposalService.bidProposal(id);
