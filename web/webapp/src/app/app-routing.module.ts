@@ -14,12 +14,18 @@ import {LoginListenerComponent} from "@app/login/login-listener/login-listener.c
 import {LoginReviewerComponent} from "@app/login/login-reviewer/login-reviewer.component";
 import {LoginComponent} from "@app/login/login.component";
 import {ReviewerComponent} from "@app/reviewer/reviewer.component";
+import {ChairComponent} from "@app/chair/chair.component";
+import {ListenerComponent} from "@app/listener/listener.component";
+import {RegisterComponent} from "@app/register/register.component";
+import {RegisterListenerComponent} from "@app/register/register-listener/register-listener.component";
 
 const routes: Routes = [
   {path: 'books', component: BooksComponent},
   {path: 'books/add-book', component: AddBookComponent},
   {path: 'books/update-book/:id', component: UpdateBookComponent},
   {path: 'register/register-author', component: RegisterAuthorComponent},
+  {path: 'register/register-listener', component: RegisterListenerComponent},
+  {path: 'register', component:RegisterComponent},
   {path: 'login/login-author', component:LoginAuthorComponent},
   {path: 'login/login-chair', component:LoginChairComponent},
   {path: 'login/login-reviewer', component:LoginReviewerComponent},
@@ -29,7 +35,9 @@ const routes: Routes = [
   {path: 'author', component:AuthorComponent},
   {path: 'proposals/add-proposal', component: AddProposalComponent},
   {path: 'proposals/upload', component:UpdateProposalFileComponent},
-  {path: 'reviewer',component: ReviewerComponent}
+  {path: 'reviewer',component: ReviewerComponent},
+  {path: 'listener', component:ListenerComponent},
+  {path: 'chair', component:ChairComponent}
 ];
 
 @NgModule({

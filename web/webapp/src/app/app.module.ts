@@ -23,6 +23,10 @@ import { LoginListenerComponent } from './login/login-listener/login-listener.co
 import { LoginReviewerComponent } from './login/login-reviewer/login-reviewer.component';
 import { LoginChairComponent } from './login/login-chair/login-chair.component';
 import { ReviewerComponent } from './reviewer/reviewer.component';
+import { ListenerComponent } from './listener/listener.component';
+import { ChairComponent } from './chair/chair.component';
+import { RegisterComponent } from './register/register.component';
+import { RegisterListenerComponent } from './register/register-listener/register-listener.component';
 
 
 
@@ -46,6 +50,10 @@ import { ReviewerComponent } from './reviewer/reviewer.component';
     LoginReviewerComponent,
     LoginChairComponent,
     ReviewerComponent,
+    ListenerComponent,
+    ChairComponent,
+    RegisterComponent,
+    RegisterListenerComponent,
 
   ],
   imports: [

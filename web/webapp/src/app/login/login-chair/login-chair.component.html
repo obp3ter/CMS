@@ -1,3 +1,33 @@
-<p>
-  login-chair works!
-</p>
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Email </label>
+        <input type="text" class="form-control" formControlName="chair_email" #chair_email />
+      </div>
+      <div *ngIf="angForm.controls['chair_email'].invalid && (angForm.controls['chair_email'].dirty || angForm.controls['chair_email'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['chair_email'].errors.required">
+          Email is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Password</label>
+        <input type="password" class="form-control" formControlName="chair_password" #chair_password />
+      </div>
+      <div *ngIf="angForm.controls['chair_password'].invalid && (angForm.controls['chair_password'].dirty || angForm.controls['chair_password'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['chair_password'].errors.required">
+          Password is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <button (click)="loginChair(chair_email.value,chair_password.value)"
+                [disabled]="angForm.pristine || angForm.invalid"
+                class="btn btn-primary">
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
