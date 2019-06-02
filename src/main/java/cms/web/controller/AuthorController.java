@@ -6,17 +6,15 @@ import cms.core.model.Listener;
 import cms.core.services.AuthorService;
 import cms.core.services.ChairService;
 import cms.core.services.ListenerService;
+import cms.web.converter.AuthorConverter;
 import cms.web.converter.ChairConverter;
 import cms.web.converter.ListenerConverter;
+import cms.web.dto.AuthorDto;
 import cms.web.dto.ChairDto;
 import cms.web.dto.ListenerDto;
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import cms.web.converter.AuthorConverter;
-import cms.web.dto.AuthorDto;
 
-import java.net.http.WebSocket;
 import java.util.ArrayList;
 import java.util.List;
 
