@@ -1,42 +1,50 @@
 <div class="card">
+  <div class="card-header">Register Author!</div>
   <div class="card-body">
     <form [formGroup]="angForm" novalidate>
       <div class="form-group">
-        <label class="col-md-4">Author Email </label>
+        <label class="col-md-4">Email </label>
         <input type="text" class="form-control" formControlName="author_email" #author_email />
       </div>
       <div *ngIf="angForm.controls['author_email'].invalid && (angForm.controls['author_email'].dirty || angForm.controls['author_email'].touched)" class="alert alert-danger">
         <div *ngIf="angForm.controls['author_email'].errors.required">
-          Author Email is required.
+          {{this.setColorRed('email')}}
         </div>
       </div>
+      <div *ngIf="angForm.controls['author_email'].dirty && angForm.controls['author_email'].valid">{{this.setColorGreen('email')}}</div>
       <div class="form-group">
-        <label class="col-md-4">Author Password</label>
+        <label class="col-md-4">Password</label>
         <input type="password" class="form-control" formControlName="author_password" #author_password />
       </div>
       <div *ngIf="angForm.controls['author_password'].invalid && (angForm.controls['author_password'].dirty || angForm.controls['author_password'].touched)" class="alert alert-danger">
         <div *ngIf="angForm.controls['author_password'].errors.required">
-          Author Password is required.
+          {{this.setColorRed('password')}}
         </div>
       </div>
+      <div *ngIf="angForm.controls['author_password'].dirty && angForm.controls['author_password'].valid">{{this.setColorGreen('password')}}</div>
       <div class="form-group">
-        <label class="col-md-4">Author Password</label>
+        <label class="col-md-4">Repeat Password</label>
         <input type="password" class="form-control" formControlName="author_password_confirm" #author_password_confirm />
       </div>
       <div *ngIf="angForm.controls['author_password_confirm'].invalid && (angForm.controls['author_password_confirm'].dirty || angForm.controls['author_password_confirm'].touched)" class="alert alert-danger">
         <div *ngIf="angForm.controls['author_password_confirm'].errors.required">
-          Author Password Confirm is required.
+          {{this.setColorRed('check')}}
         </div>
       </div>
+      <div *ngIf="angForm.controls['author_password_confirm'].value === angForm.controls['author_password'].value && angForm.controls['author_password_confirm'].dirty; else red">
+        {{this.setColorGreen('check')}}
+      </div>
+      <ng-template #red><div *ngIf="angForm.controls['author_password_confirm'].dirty">{{this.setColorRed('check')}}</div></ng-template>
       <div class="form-group">
-        <label class="col-md-4">Author Company </label>
+        <label class="col-md-4">Company </label>
         <input type="text" class="form-control" formControlName="author_company" #author_company />
       </div>
       <div *ngIf="angForm.controls['author_company'].invalid && (angForm.controls['author_company'].dirty || angForm.controls['author_company'].touched)" class="alert alert-danger">
         <div *ngIf="angForm.controls['author_company'].errors.required">
-          Business GST Number is required.
+          {{this.setColorRed('company')}}
         </div>
       </div>
+      <div *ngIf="angForm.controls['author_company'].dirty && angForm.controls['author_company'].valid">{{this.setColorGreen('company')}}</div>
       <div class="form-group">
         <button (click)="addAuthor(author_email.value,author_password.value,author_password_confirm.value, author_company.value)"
                 [disabled]="angForm.pristine || angForm.invalid"

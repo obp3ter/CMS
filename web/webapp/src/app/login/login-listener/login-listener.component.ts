@@ -39,6 +39,26 @@ export class LoginListenerComponent implements OnInit {
       }
     });
   }
+  setColorRed(what: string) {
+    if (what == 'email') {
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(0);
+      label.style.color = 'red';
+    }
+    if(what == "password"){
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(1);
+      label.style.color = 'red';
+    }
+  }
+  setColorGreen(what: string){
+    if (what == 'email') {
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(0);
+      label.style.color = 'green';
+    }
+    if(what == "password"){
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(1);
+      label.style.color = 'green';
+    }
+  }
 
   ngOnInit() {
   }

@@ -1,4 +1,5 @@
 <div class="card">
+  <div class="card-header">Log in as PC Member!</div>
   <div class="card-body">
     <form [formGroup]="angForm" novalidate>
       <div class="form-group">
@@ -7,18 +8,22 @@
       </div>
       <div *ngIf="angForm.controls['reviewer_email'].invalid && (angForm.controls['reviewer_email'].dirty || angForm.controls['reviewer_email'].touched)" class="alert alert-danger">
         <div *ngIf="angForm.controls['reviewer_email'].errors.required">
-          Email is required.
+          {{this.setColorRed('email')}}
         </div>
       </div>
+      <div *ngIf="angForm.controls['reviewer_email'].dirty && angForm.controls['reviewer_email'].valid">{{this.setColorGreen('email')}}</div>
+
       <div class="form-group">
         <label class="col-md-4">Password</label>
         <input type="password" class="form-control" formControlName="reviewer_password" #reviewer_password />
       </div>
       <div *ngIf="angForm.controls['reviewer_password'].invalid && (angForm.controls['reviewer_password'].dirty || angForm.controls['reviewer_password'].touched)" class="alert alert-danger">
         <div *ngIf="angForm.controls['reviewer_password'].errors.required">
-          Password is required.
+          {{this.setColorRed('password')}}
         </div>
       </div>
+      <div *ngIf="angForm.controls['reviewer_password'].dirty && angForm.controls['reviewer_password'].valid">{{this.setColorGreen('password')}}</div>
+
       <div class="form-group">
         <button (click)="loginReviewer(reviewer_email.value,reviewer_password.value)"
                 [disabled]="angForm.pristine || angForm.invalid"

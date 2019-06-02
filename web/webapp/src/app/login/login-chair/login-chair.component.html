@@ -1,4 +1,5 @@
 <div class="card">
+  <div class="card-header">Log in as Chair!</div>
   <div class="card-body">
     <form [formGroup]="angForm" novalidate>
       <div class="form-group">
@@ -7,18 +8,22 @@
       </div>
       <div *ngIf="angForm.controls['chair_email'].invalid && (angForm.controls['chair_email'].dirty || angForm.controls['chair_email'].touched)" class="alert alert-danger">
         <div *ngIf="angForm.controls['chair_email'].errors.required">
-          Email is required.
+          {{this.setColorRed('email')}}
         </div>
       </div>
+      <div *ngIf="angForm.controls['chair_email'].dirty && angForm.controls['chair_email'].valid">{{this.setColorGreen('email')}}</div>
+
       <div class="form-group">
         <label class="col-md-4">Password</label>
         <input type="password" class="form-control" formControlName="chair_password" #chair_password />
       </div>
       <div *ngIf="angForm.controls['chair_password'].invalid && (angForm.controls['chair_password'].dirty || angForm.controls['chair_password'].touched)" class="alert alert-danger">
         <div *ngIf="angForm.controls['chair_password'].errors.required">
-          Password is required.
+          {{this.setColorRed('password')}}
         </div>
       </div>
+      <div *ngIf="angForm.controls['chair_password'].dirty && angForm.controls['chair_password'].valid">{{this.setColorGreen('password')}}</div>
+
       <div class="form-group">
         <button (click)="loginChair(chair_email.value,chair_password.value)"
                 [disabled]="angForm.pristine || angForm.invalid"
