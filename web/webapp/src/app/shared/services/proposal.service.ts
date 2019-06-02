@@ -29,6 +29,10 @@ export class ProposalService {
     return this.httpClient.get<Array<Proposal>>(this.path+"?reviewerId="+id)
 
   }
+  getProposalByAssigned(id)
+  {
+    return this.httpClient.get<Array<Proposal>>(this.path+"?reviewerId="+id+"&phase=review")
+  }
   updateFiles(data)
   {
     this.httpClient.post(`${this.path}/uploadfile`, data)
@@ -62,6 +66,12 @@ export class ProposalService {
     this.httpClient.post(`${this.path}/refuse`, formData)
       .subscribe(res => console.log('Done'));
   }
+  reviewProposal(body)
+  {
+    this.httpClient.post(`${this.path}/review`, body)
+      .subscribe(res => console.log('Done'));
+  }
+
   getDeadline(deadlineName:string)
   {
     return this.httpClient.get(this.path+"/deadlines?deadlineName="+deadlineName)

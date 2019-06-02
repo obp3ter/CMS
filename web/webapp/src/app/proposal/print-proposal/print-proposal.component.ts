@@ -43,8 +43,17 @@ export class PrintProposalComponent implements OnInit {
     console.log(this.proposals)
   }
   getAllbyIdReviewer(): void {
-    this.proposalService.getProposalByReviewerId(toNumbers(sessionStorage.getItem("id"))[0])
-      .subscribe(stud => this.proposals = stud);
+    if(this.proposalService.isBeforeDeadline("bidding"))
+    {
+      this.proposalService.getProposalByReviewerId(toNumbers(sessionStorage.getItem("id"))[0])
+        .subscribe(stud => this.proposals = stud);
+    }
+    else
+    {
+      console.log("getting by assigned")
+      this.proposalService.getProposalByAssigned(toNumbers(sessionStorage.getItem("id"))[0])
+        .subscribe(stud => this.proposals = stud);
+    }
     console.log(this.proposals)
   }
   // deleteProposal(proposal_id):void
@@ -82,6 +91,11 @@ export class PrintProposalComponent implements OnInit {
   {
     this.proposalService.refuseProposal(id);
     this.router.navigate(['/reviewer'], { skipLocationChange: true});
+  }
+  reviewProposal(id)
+  {
+    sessionStorage.setItem("proposalID",id.toString())
+    this.router.navigate(['/proposals/review-proposal'], { skipLocationChange: true});
   }
 
   onSelect(proposal): void {

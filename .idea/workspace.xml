@@ -1,39 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abe84e7f-ee4a-4939-9c52-d6f6605a2d72" name="Default Changelist" comment="Merge branch 'backend' of https://github.com/obp3ter/CMS into backend&#10;&#10;# Conflicts:&#10;#&#9;web/webapp/src/app/shared/services/listener.service.ts">
+    <list default="true" id="abe84e7f-ee4a-4939-9c52-d6f6605a2d72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Author.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Author.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Chair.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Chair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Proposal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Proposal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Review.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Reviewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Reviewer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Session.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/Session.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/services/FileStorageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/services/FileStorageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/services/ListenerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/services/ListenerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/core/services/SessionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/core/services/SessionServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/AuthorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/FileController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/ProposalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/ProposalController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/SessionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/SessionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/web/converter/ProposalConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/web/converter/ProposalConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/web/converter/SessionConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/web/converter/SessionConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/web/converter/UserConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/web/converter/UserConverter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/web/payload/UploadFileResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/web/payload/UploadFileResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -152,14 +136,90 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/review-proposal/review-proposal.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="72" column="3" lean-forward="true" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/review-proposal/review-proposal.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register.component.spec.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="227">
+              <caret line="370" column="39" lean-forward="true" selection-start-line="370" selection-start-column="39" selection-end-line="370" selection-end-column="39" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#uploadAbstract#0;class#ProposalController#0" />
                 <element signature="method#saveProposal#0;class#ProposalController#0" />
-                <element signature="method#getProposal#0;class#ProposalController#0" />
                 <element signature="method#saveReviewer#0;class#ProposalController#0" />
                 <element signature="method#getReviewer#0;class#ProposalController#0" />
                 <element signature="method#bidOnProposal#0;class#ProposalController#0" />
@@ -173,89 +233,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.6.RELEASE/dfb9e2cce0376ed468b6988b88a08fa7fb43f355/spring-web-5.1.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="1" selection-start-line="16" selection-end-line="71" selection-end-column="1" />
+            <state relative-caret-position="184">
+              <caret line="188" selection-start-line="188" selection-end-line="188" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/AuthorController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2754">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/reviewer.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -271,10 +254,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>;</find>
-      <find>dto</find>
-      <find>Proposa</find>
-      <find>Paper</find>
       <find>reviewerService</find>
       <find>customer</find>
       <find>reviewerConverter</find>
@@ -301,6 +280,10 @@
       <find>`deadline-${{name}}`</find>
       <find>author</find>
       <find>Author</find>
+      <find>Add</find>
+      <find>listOfAuthors</find>
+      <find>bid</find>
+      <find>proposal_listOfAuthors</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -330,6 +313,8 @@
       <replace>Chair</replace>
       <replace>listener</replace>
       <replace>Listener</replace>
+      <replace>Bid</replace>
+      <replace>proposal_grade</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -348,11 +333,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/AuthorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/core/repository/ListenerRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/core/repository/SessionRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/core/services/ListenerServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/core/services/ListenerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cms/core/services/SessionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cms/core/services/SessionServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/SessionController.java" />
@@ -372,7 +352,6 @@
         <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.html" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts" />
@@ -383,10 +362,6 @@
         <option value="$PROJECT_DIR$/web/webapp/src/app/shared/models/reviewer.model.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/reviewer.service.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/listener/listener.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/listener/listener.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/chair/chair.component.ts" />
@@ -395,16 +370,26 @@
         <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/listener.service.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/bid-proposal/bid-proposal.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/bid-proposal/bid-proposal.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" />
+        <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/review-proposal/bid-proposal.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/review-proposal/review-proposal.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/review-proposal/review-proposal.component.ts" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-625" />
-    <option name="y" value="-19" />
+    <option name="x" value="-321" />
+    <option name="y" value="-21" />
     <option name="width" value="1759" />
     <option name="height" value="1087" />
   </component>
@@ -447,6 +432,33 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
@@ -515,27 +527,7 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="login-chair" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="login-listener" type="462c0819:PsiDirectoryNode" />
+              <item name="proposal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
@@ -545,6 +537,37 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="proposal" type="462c0819:PsiDirectoryNode" />
+              <item name="add-proposal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="proposal" type="462c0819:PsiDirectoryNode" />
+              <item name="print-proposal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="proposal" type="462c0819:PsiDirectoryNode" />
+              <item name="review-proposal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="proposal" type="462c0819:PsiDirectoryNode" />
+              <item name="update-proposal-file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
@@ -669,7 +692,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CMSServer">
+  <component name="RunManager" selected="npm.Angular CLI">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="server" />
       <option name="VM_PARAMETERS" />
@@ -959,11 +982,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559471273373</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="upd">
+      <created>1559471974861</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1559471974861</updated>
+    </task>
+    <task id="LOCAL-00030" summary="upd">
+      <created>1559474230469</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1559474230469</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110214000" />
+    <option name="totallyTimeSpent" value="117998000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -976,6 +1013,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19509594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -985,24 +1023,24 @@
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Image Layers" order="7" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.49946696" weight="0.32917964" />
-      <window_info anchor="bottom" id="TypeScript" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3281412" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49733475" weight="0.32917964" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3997923" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32917964" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.33427763" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.32719547" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021322" side_tool="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4978678" visible="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32917964" />
-      <window_info anchor="bottom" id="Spring" order="16" weight="0.32914045" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49946696" weight="0.32917964" />
+      <window_info anchor="bottom" id="TypeScript" order="1" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3281412" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.5714286" visible="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49946696" weight="0.3997923" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32917964" />
+      <window_info anchor="bottom" id="Build" order="9" weight="0.33427763" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.32719547" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.42857143" side_tool="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.4978678" weight="0.32917964" />
+      <window_info anchor="bottom" id="Database Console" order="16" weight="0.32917964" />
+      <window_info anchor="bottom" id="Spring" order="17" weight="0.32914045" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1042,80 +1080,10 @@
     <MESSAGE value="bidding" />
     <MESSAGE value="deadlines" />
     <MESSAGE value="Merge branch 'backend' of https://github.com/obp3ter/CMS into backend&#10;&#10;# Conflicts:&#10;#&#9;web/webapp/src/app/shared/services/listener.service.ts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'backend' of https://github.com/obp3ter/CMS into backend&#10;&#10;# Conflicts:&#10;#&#9;web/webapp/src/app/shared/services/listener.service.ts" />
+    <MESSAGE value="upd" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="16" column="75" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="102" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="13" column="102" selection-start-line="13" selection-start-column="102" selection-end-line="13" selection-end-column="102" />
-          <folding>
-            <element signature="e#0#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/SessionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="109" column="39" selection-start-line="109" selection-start-column="39" selection-end-line="109" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getSession#0;class#SessionController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1175,61 +1143,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/login-listener.component.ts" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/login.component.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="method#uploadAbstract#0;class#ProposalController#0" />
-            <element signature="method#saveProposal#0;class#ProposalController#0" />
-            <element signature="method#getProposal#0;class#ProposalController#0" />
-            <element signature="method#saveReviewer#0;class#ProposalController#0" />
-            <element signature="method#getReviewer#0;class#ProposalController#0" />
-            <element signature="method#bidOnProposal#0;class#ProposalController#0" />
-            <element signature="method#refuseProposal#0;class#ProposalController#0" />
-            <element signature="method#assignProposal#0;class#ProposalController#0" />
-            <element signature="method#getDeadlines#0;class#ProposalController#0" />
-            <element signature="method#reviewProposal#0;class#ProposalController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" selection-end-line="23" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -1330,16 +1249,6 @@
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1382,23 +1291,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -1446,7 +1338,146 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="48" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="13" column="102" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.6.RELEASE/dfb9e2cce0376ed468b6988b88a08fa7fb43f355/spring-web-5.1.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="188" selection-start-line="188" selection-end-line="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/review-proposal/review-proposal.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/core/services/ProposalServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="370" column="39" lean-forward="true" selection-start-line="370" selection-start-column="39" selection-end-line="370" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#uploadAbstract#0;class#ProposalController#0" />
+            <element signature="method#saveProposal#0;class#ProposalController#0" />
+            <element signature="method#saveReviewer#0;class#ProposalController#0" />
+            <element signature="method#getReviewer#0;class#ProposalController#0" />
+            <element signature="method#bidOnProposal#0;class#ProposalController#0" />
+            <element signature="method#refuseProposal#0;class#ProposalController#0" />
+            <element signature="method#assignProposal#0;class#ProposalController#0" />
+            <element signature="method#getDeadlines#0;class#ProposalController#0" />
+            <element signature="method#reviewProposal#0;class#ProposalController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="72" column="3" lean-forward="true" selection-start-line="72" selection-start-column="3" selection-end-line="72" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/review-proposal/review-proposal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

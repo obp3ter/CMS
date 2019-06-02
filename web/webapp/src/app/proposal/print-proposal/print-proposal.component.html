@@ -7,8 +7,11 @@
     <th>Abstract</th>
     <th>Paper</th>
     <th>ListOfAuthors</th>
-    <ng-container *ngIf="reviewerShow()">
+    <ng-container *ngIf="(reviewerShow()  && isBeforeDeadline('bidding'))">
       <th></th>
+      <th></th>
+    </ng-container>
+    <ng-container *ngIf="(reviewerShow()  && !isBeforeDeadline('bidding'))">
       <th></th>
     </ng-container>
 <!--    <th></th>-->
@@ -40,11 +43,18 @@
                    class="btn btn-primary">
         Accept Paper
       </button></td>
-      <td> <button (click)="(refuseProposal(proposal.id) && isBeforeDeadline('bidding'))"
+      <td> <button (click)="refuseProposal(proposal.id)"
                    class="btn btn-primary">
         Refuse Paper
       </button></td>
     </ng-container>
+    <ng-container *ngIf="(reviewerShow()  && !isBeforeDeadline('bidding'))">
+      <td><button (click)="reviewProposal(proposal.id)"
+                  class="btn btn-primary">
+        Review Paper
+      </button></td>
+    </ng-container>
+
 <!--    <td> <button (click)="deleteProposal(proposal.id)"-->
 <!--                 class="btn btn-primary">-->
 <!--      Delete Proposal-->

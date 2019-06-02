@@ -27,6 +27,7 @@ import { ListenerComponent } from './listener/listener.component';
 import { ChairComponent } from './chair/chair.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterListenerComponent } from './register/register-listener/register-listener.component';
+import { ReviewProposalComponent } from './proposal/review-proposal/review-proposal.component';
 
 
 
@@ -54,6 +55,7 @@ import { RegisterListenerComponent } from './register/register-listener/register
     ChairComponent,
     RegisterComponent,
     RegisterListenerComponent,
+    ReviewProposalComponent,
 
   ],
   imports: [
