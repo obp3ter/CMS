@@ -18,6 +18,7 @@ import {ChairComponent} from "@app/chair/chair.component";
 import {ListenerComponent} from "@app/listener/listener.component";
 import {RegisterComponent} from "@app/register/register.component";
 import {RegisterListenerComponent} from "@app/register/register-listener/register-listener.component";
+import {ReviewProposalComponent} from "@app/proposal/review-proposal/review-proposal.component";
 
 const routes: Routes = [
   {path: 'books', component: BooksComponent},
@@ -34,6 +35,7 @@ const routes: Routes = [
   {path: 'sucess', component:SucessComponent},
   {path: 'author', component:AuthorComponent},
   {path: 'proposals/add-proposal', component: AddProposalComponent},
+  {path: 'proposals/review-proposal', component: ReviewProposalComponent},
   {path: 'proposals/upload', component:UpdateProposalFileComponent},
   {path: 'reviewer',component: ReviewerComponent},
   {path: 'listener', component:ListenerComponent},

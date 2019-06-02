@@ -120,7 +120,8 @@ public class ProposalController {
     @RequestMapping(value = "/proposals", method = RequestMethod.GET)
     List<ProposalDto> getProposal(@RequestParam(required = false, defaultValue = "-1") Integer id,
                                   @RequestParam(required = false, defaultValue = "-1") Integer authorId,
-                                  @RequestParam(required = false,defaultValue = "-1") Integer reviewerId
+                                  @RequestParam(required = false,defaultValue = "-1") Integer reviewerId,
+                                  @RequestParam(required = false,defaultValue = "") String phase
                                     )
     {
 
@@ -170,9 +171,12 @@ public class ProposalController {
         }
         else
         {
-            return new ArrayList<>(proposalConverter.convertModelsToDtos(proposals.stream().filter(proposal ->
-                !(proposal.getRefusers().contains(reviewerId) || proposal.getReviewers().contains(reviewerId))
+            var res=new ArrayList<>(proposalConverter.convertModelsToDtos(proposals.stream().filter(proposal ->(
+                    (phase.equals("review") && !(!(proposal.getAssignedReviewers().contains(reviewerId)) || (proposal.getReviews().stream().anyMatch(r -> r.getReviewerID() == reviewerId))) ) ||
+                            (!phase.equals("review") && !(proposal.getRefusers().contains(reviewerId) || proposal.getReviewers().contains(reviewerId))))
+
             ).collect(Collectors.toList())));
+            return res;
         }
     }
 

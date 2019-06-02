@@ -27,11 +27,11 @@ import { ListenerComponent } from './listener/listener.component';
 import { ChairComponent } from './chair/chair.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterListenerComponent } from './register/register-listener/register-listener.component';
+import { ReviewProposalComponent } from './proposal/review-proposal/review-proposal.component';
 import { AdminComponent } from './admin/admin.component';
 
 
 
-// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +56,7 @@ import { AdminComponent } from './admin/admin.component';
     RegisterComponent,
     RegisterListenerComponent,
     AdminComponent,
+    ReviewProposalComponent,
 
   ],
   imports: [
