@@ -25,16 +25,23 @@
   border-radius: 10px;
   padding: 20px;
   background-color: rgba(20, 161, 172, 0.52);
-
 }
 .card-body {
-  top: 15%;
-  left: 15%;
-  position: relative;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
 }
 
 .form-group {
-  margin: 8px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 7px;
+}
+.form-group.col-md-4{
+  display: inline-block;
+  margin: auto;
 }
 
 button {
@@ -42,6 +49,7 @@ button {
   border: none;
   padding: 5px 10px;
   border-radius: 4px;
+  font-size: large;
   cursor: pointer;
   cursor: hand;
 }

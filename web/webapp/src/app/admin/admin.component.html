@@ -1,3 +1,13 @@
-<p>
-  admin works!
-</p>
+<h2>Welcome admin!</h2>
+<div class = "admin">
+<span>
+<button (click)="inputDeadlines()">Set Deadlines</button>
+<button (click)="inputChair()">Create Chair account!</button>
+
+</span>
+
+<div class = "child-component">
+  <span class = "deadlines"><app-deadline-input [show] = "deadlines"></app-deadline-input></span>
+  <span class = "chair"><app-chair-register [show] = "chair"></app-chair-register></span>
+</div>
+</div>

@@ -1,0 +1,52 @@
+<span *ngIf="show">
+<div class="card">
+  <div class="card-header">Register Chair!</div>
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Email </label>
+        <input type="text" class="form-control" formControlName="Chair_email" #Chair_email />
+      </div>
+      <div *ngIf="angForm.controls['Chair_email'].invalid && (angForm.controls['Chair_email'].dirty || angForm.controls['Chair_email'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['Chair_email'].errors.required">
+          {{this.setColorRed('email')}}
+        </div>
+      </div>
+      <div *ngIf="angForm.controls['Chair_password'].dirty && angForm.controls['Chair_password'].valid">{{this.setColorGreen('password')}}</div>
+
+      <div class="form-group">
+        <label class="col-md-4">Password</label>
+        <input type="password" class="form-control" formControlName="Chair_password" #Chair_password />
+      </div>
+      <div *ngIf="angForm.controls['Chair_password'].invalid && (angForm.controls['Chair_password'].dirty || angForm.controls['Chair_password'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['Chair_password'].errors.required">
+
+          {{this.setColorRed('password')}}
+        </div>
+      </div>
+      <div *ngIf="angForm.controls['Chair_password'].dirty && angForm.controls['Chair_password'].valid">{{this.setColorGreen('password')}}</div>
+
+      <div class="form-group">
+        <label class="col-md-4">Confirm Password</label>
+        <input type="password" class="form-control" formControlName="Chair_password_confirm" #Chair_password_confirm />
+      </div>
+      <div *ngIf="angForm.controls['Chair_password_confirm'].invalid && (angForm.controls['Chair_password_confirm'].dirty || angForm.controls['Chair_password_confirm'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['Chair_password_confirm'].errors.required">
+          {{this.setColorRed('check')}}
+        </div>
+      </div>
+      <div *ngIf="angForm.controls['Chair_password_confirm'].value === angForm.controls['Chair_password'].value && angForm.controls['Chair_password_confirm'].dirty; else red">
+        {{this.setColorGreen('check')}}
+      </div>
+      <ng-template #red><div *ngIf="angForm.controls['Chair_password_confirm'].dirty">{{this.setColorRed('check')}}</div></ng-template>
+      <div class="form-group">
+        <button (click)="addChair(Chair_email.value,Chair_password.value,Chair_password_confirm.value)"
+                [disabled]="angForm.pristine || angForm.invalid"
+                class="btn btn-primary">
+          Register
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+</span>

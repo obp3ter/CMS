@@ -28,11 +28,10 @@ export class ChairService {
     return this.httpClient.get<Array<Chair>>(this.path+"?email="+email)
 
   }
-  addChair(chair_email, chair_password, chair_company) {
+  addChair(chair_email, chair_password) {
     const formData: FormData = new FormData();
     formData.append("email",chair_email);
     formData.append("password",chair_password);
-    formData.append("company",chair_company);
     console.log(formData);
     this.httpClient.post(`${this.path}`, formData)
       .subscribe(res => console.log('Done'));

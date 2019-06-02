@@ -1,0 +1,16 @@
+span{
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+span button {
+  margin-bottom: 10px;
+}
+
+.admin .child-component {
+  float: right;
+}
+
+

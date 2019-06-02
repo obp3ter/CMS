@@ -19,6 +19,7 @@ import {ListenerComponent} from "@app/listener/listener.component";
 import {RegisterComponent} from "@app/register/register.component";
 import {RegisterListenerComponent} from "@app/register/register-listener/register-listener.component";
 import {ReviewProposalComponent} from "@app/proposal/review-proposal/review-proposal.component";
+import {AdminComponent} from "@app/admin/admin.component";
 
 const routes: Routes = [
   {path: 'books', component: BooksComponent},
@@ -39,7 +40,8 @@ const routes: Routes = [
   {path: 'proposals/upload', component:UpdateProposalFileComponent},
   {path: 'reviewer',component: ReviewerComponent},
   {path: 'listener', component:ListenerComponent},
-  {path: 'chair', component:ChairComponent}
+  {path: 'chair', component:ChairComponent},
+  {path: 'admin', component: AdminComponent}
 ];
 
 @NgModule({

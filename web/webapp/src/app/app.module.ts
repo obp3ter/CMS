@@ -29,6 +29,8 @@ import { RegisterComponent } from './register/register.component';
 import { RegisterListenerComponent } from './register/register-listener/register-listener.component';
 import { ReviewProposalComponent } from './proposal/review-proposal/review-proposal.component';
 import { AdminComponent } from './admin/admin.component';
+import { DeadlineInputComponent } from './admin/deadline-input/deadline-input.component';
+import { ChairRegisterComponent } from './register/chair-register/chair-register.component';
 
 
 
@@ -57,6 +59,8 @@ import { AdminComponent } from './admin/admin.component';
     RegisterListenerComponent,
     AdminComponent,
     ReviewProposalComponent,
+    DeadlineInputComponent,
+    ChairRegisterComponent,
 
   ],
   imports: [
