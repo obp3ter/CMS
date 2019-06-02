@@ -14,14 +14,15 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/cms/web/controller/AuthorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cms/core/model/Proposal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cms/core/model/Proposal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cms/web/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cms/web/controller/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -138,110 +139,153 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/chair.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/chair.model.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cms/core/model/Chair.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/listener.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/author.model.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/author.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="13" selection-end-line="42" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5395257">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="290">
+                  <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+                  <folding>
+                    <element signature="e#0#39#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register.component.ts">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="459">
+                  <caret line="29" lean-forward="true" selection-end-line="34" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+                  <folding>
+                    <element signature="e#0#50#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="69">
+                  <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/listener.service.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register.component.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="952">
+                  <caret line="402" selection-start-line="402" selection-end-line="402" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#uploadAbstract#0;class#ProposalController#0" />
+                    <element signature="method#saveProposal#0;class#ProposalController#0" />
+                    <element signature="method#getProposal#0;class#ProposalController#0" />
+                    <element signature="method#saveReviewer#0;class#ProposalController#0" />
+                    <element signature="method#getReviewer#0;class#ProposalController#0" />
+                    <element signature="method#bidOnProposal#0;class#ProposalController#0" />
+                    <element signature="method#refuseProposal#0;class#ProposalController#0" />
+                    <element signature="method#assignProposal#0;class#ProposalController#0" />
+                    <element signature="method#getDeadlines#0;class#ProposalController#0" />
+                    <element signature="method#reviewProposal#0;class#ProposalController#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.ts">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="544">
+                  <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -254,7 +298,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Customer</find>
       <find>;</find>
       <find>dto</find>
       <find>Proposa</find>
@@ -281,8 +324,10 @@
       <find>avatar</find>
       <find>Book</find>
       <find>Topics</find>
-      <find>Author</find>
+      <find>lom</find>
+      <find>`deadline-${{name}}`</find>
       <find>author</find>
+      <find>Author</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -305,12 +350,13 @@
       <replace>myFile</replace>
       <replace>Proposal</replace>
       <replace>List Of Authors</replace>
-      <replace>Reviewer</replace>
       <replace>reviewer</replace>
-      <replace>listener</replace>
-      <replace>Chair</replace>
-      <replace>Listener</replace>
+      <replace>Reviewer</replace>
+      <replace>&quot;deadline-&quot;+name</replace>
       <replace>chair</replace>
+      <replace>Chair</replace>
+      <replace>listener</replace>
+      <replace>Listener</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -329,7 +375,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cms/web/converter/ListenerConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/AuthorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cms/core/repository/ListenerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/cms/core/repository/SessionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/cms/core/services/ListenerServiceImpl.java" />
@@ -342,51 +388,51 @@
         <option value="$PROJECT_DIR$/web/webapp/src/tsconfig.app.json" />
         <option value="$PROJECT_DIR$/web/webapp/src/tsconfig.spec.json" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/author.service.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/shared/sucess.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/shared/models/proposal.model.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/models/author.model.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/models/listener.model.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/models/reviewer.model.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.html" />
+        <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/reviewerservice.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/models/reviewer.model.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/reviewer.service.ts" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/AuthorController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cms/core/model/Proposal.java" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/listener.service.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/chair.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/chair.service.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/models/chair.model.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/listener/listener.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/listener/listener.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/chair/chair.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/chair/chair.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/register/register.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/listener.service.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="975" />
-    <option name="height" value="1090" />
+    <option name="x" value="-625" />
+    <option name="y" value="-19" />
+    <option name="width" value="1759" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -435,6 +481,26 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
@@ -488,7 +554,16 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="chair" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
@@ -507,8 +582,46 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-              <item name="login-chair" type="462c0819:PsiDirectoryNode" />
+              <item name="proposal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="proposal" type="462c0819:PsiDirectoryNode" />
+              <item name="print-proposal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="register-author" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+              <item name="register-listener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
@@ -538,16 +651,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="sucess" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -585,11 +688,11 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ObP3t\IdeaProjects\server\web\webapp\src\app\register" />
       <recent name="C:\Users\ObP3t\IdeaProjects\server\web\webapp\src\app\shared\models" />
       <recent name="C:\Users\ObP3t\IdeaProjects\server\src\main\java\cms" />
       <recent name="C:\Users\ObP3t\IdeaProjects\server\src\main\java\core" />
       <recent name="C:\Users\ObP3t\IdeaProjects\server\core\src\main\java" />
-      <recent name="C:\Users\ObP3t\IdeaProjects\server" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="web.converter" />
@@ -869,11 +972,39 @@
       <option name="project" value="LOCAL" />
       <updated>1558890084923</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="log">
+      <created>1558890676730</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1558890676730</updated>
+    </task>
+    <task id="LOCAL-00025" summary="r1">
+      <created>1558893018144</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1558893018144</updated>
+    </task>
+    <task id="LOCAL-00026" summary="bidding">
+      <created>1558894181555</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1558894181555</updated>
+    </task>
+    <task id="LOCAL-00027" summary="deadlines">
+      <created>1558956248761</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1558956248761</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100778000" />
+    <option name="totallyTimeSpent" value="109511000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -947,26 +1078,43 @@
     <MESSAGE value="webappstart" />
     <MESSAGE value="webappstart3" />
     <MESSAGE value="hidepass" />
-    <option name="LAST_COMMIT_MESSAGE" value="hidepass" />
+    <MESSAGE value="log" />
+    <MESSAGE value="r1" />
+    <MESSAGE value="bidding" />
+    <MESSAGE value="deadlines" />
+    <option name="LAST_COMMIT_MESSAGE" value="deadlines" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts">
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/add-proposal/add-proposal.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="78" lean-forward="true" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="78" />
+        <state>
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/books/books.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/books/books.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="60" selection-end-line="37" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/dto/ProposalDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/update-proposal-file/update-proposal-file.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -977,33 +1125,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="84" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="84" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1029,10 +1150,13 @@
         <state relative-caret-position="103">
           <caret line="13" column="102" selection-start-line="13" selection-start-column="102" selection-end-line="13" selection-end-column="102" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -1046,6 +1170,83 @@
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/SessionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="109" column="39" selection-start-line="109" selection-start-column="39" selection-end-line="109" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getSession#0;class#SessionController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/reviewer.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/reviewer.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -1057,154 +1258,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/books/print-book/print-book.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/core/model/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/listener.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cms/core/model/Author.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/core/model/Reviewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="16" />
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.ts">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="119">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.css">
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/proposal/print-proposal/print-proposal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/login-listener.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/login.component.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+        <state relative-caret-position="952">
+          <caret line="402" selection-start-line="402" selection-end-line="402" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#uploadAbstract#0;class#ProposalController#0" />
+            <element signature="method#saveProposal#0;class#ProposalController#0" />
+            <element signature="method#getProposal#0;class#ProposalController#0" />
+            <element signature="method#saveReviewer#0;class#ProposalController#0" />
+            <element signature="method#getReviewer#0;class#ProposalController#0" />
+            <element signature="method#bidOnProposal#0;class#ProposalController#0" />
+            <element signature="method#refuseProposal#0;class#ProposalController#0" />
+            <element signature="method#assignProposal#0;class#ProposalController#0" />
+            <element signature="method#getDeadlines#0;class#ProposalController#0" />
+            <element signature="method#reviewProposal#0;class#ProposalController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/reviewer.model.ts">
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/proposal.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/reviewer.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="544">
+          <caret line="87" column="4" selection-start-line="87" selection-start-column="4" selection-end-line="87" selection-end-column="4" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.ts">
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="70" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
+        <state relative-caret-position="415">
+          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/App.java">
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/web/controller/AuthorController.java">
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/listener/listener.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/core/model/Proposal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="187">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1213,130 +1365,133 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="22" column="68" selection-start-line="22" selection-start-column="68" selection-end-line="22" selection-end-column="68" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="30" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="2" selection-end-line="46" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="36" column="38" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/chair.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/author.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="13" selection-end-line="42" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/listener.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/author.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cms/core/model/Chair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/models/chair.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/chair.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/listener/listener.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/chair/chair.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/chair/chair.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="60" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.html">
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="459">
+          <caret line="29" lean-forward="true" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/services/listener.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="26" column="66" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="59" selection-start-line="2" selection-start-column="59" selection-end-line="2" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>

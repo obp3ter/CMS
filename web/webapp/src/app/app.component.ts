@@ -11,4 +11,8 @@ export class AppComponent {
   {
     sessionStorage.clear();
   }
+  show():boolean
+  {
+    return sessionStorage.getItem("id")=="undefined";
+  }
 }

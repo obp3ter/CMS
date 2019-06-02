@@ -6,6 +6,7 @@ import {HttpClient, HttpParams} from "@angular/common/http";
 export class ProposalService {
   path = 'http://localhost:8080/proposals';
   proposalRes:Array<Proposal>;
+  public todayDate = new Date(Date.parse(Date()));
 
   constructor(public httpClient: HttpClient) {
     this.proposalRes = new Array<Proposal>();
@@ -21,6 +22,11 @@ export class ProposalService {
   {
     console.log("getbyid:",id)
     return this.httpClient.get<Array<Proposal>>(this.path+"?authorId="+id)
+
+  }
+  getProposalByReviewerId(id):Observable<Array<Proposal>>
+  {
+    return this.httpClient.get<Array<Proposal>>(this.path+"?reviewerId="+id)
 
   }
   updateFiles(data)
@@ -39,6 +45,47 @@ export class ProposalService {
     console.log(formData);
     this.httpClient.post(`${this.path}`, formData)
       .subscribe(res => console.log('Done'));
+  }
+  bidProposal(id)
+  {
+    const formData: FormData = new FormData();
+    formData.append("proposalID",id.toString())
+    formData.append("reviewerID",sessionStorage.getItem("id"))
+    this.httpClient.post(`${this.path}/bid`, formData)
+      .subscribe(res => console.log('Done'));
+  }
+  refuseProposal(id)
+  {
+    const formData: FormData = new FormData();
+    formData.append("proposalID",id.toString())
+    formData.append("reviewerID",sessionStorage.getItem("id"))
+    this.httpClient.post(`${this.path}/refuse`, formData)
+      .subscribe(res => console.log('Done'));
+  }
+  getDeadline(deadlineName:string)
+  {
+    return this.httpClient.get(this.path+"/deadlines?deadlineName="+deadlineName)
+
+  }
+  getDeadline2(name)
+  {
+    this.getDeadline(name).subscribe(stud => {
+      console.log("innerlog",stud,(stud["value"]));
+      sessionStorage.setItem("deadline-"+name,stud["value"]);
+    });
+  }
+
+  isBeforeDeadline(name)
+  {
+    let date:string;
+    if(this.todayDate.getMonth().toString()[0]=='1')
+      date= this.todayDate.getFullYear().toString()+"-"+(this.todayDate.getMonth()+1).toString()+"-"+this.todayDate.getDate().toString()
+    else
+      date= this.todayDate.getFullYear().toString()+"-0"+(this.todayDate.getMonth()+1).toString()+"-"+this.todayDate.getDate().toString()
+    if(sessionStorage.getItem("deadline-"+name)==null)
+      this.getDeadline2(name);
+    console.log("deadline-"+name,sessionStorage.getItem("deadline-"+name).replace('-','').replace('-',''),date.replace('-','').replace('-',''))
+    return sessionStorage.getItem("deadline-"+name).replace('-','').replace('-','')>date.replace('-','').replace('-','');
   }
 
   // @RequestParam("authorID") Integer aID,
