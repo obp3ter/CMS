@@ -28,6 +28,45 @@ export class RegisterAuthorComponent implements OnInit {
     this.authorService.addAuthor(author_email, author_password, author_company);}
   }
 
+  setColorRed(what: string) {
+    if (what == 'email') {
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(0);
+      label.style.color = 'red';
+    }
+    if(what == "password"){
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(1);
+      label.style.color = 'red';
+    }
+
+    if(what == "check"){
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(2);
+      label.style.color = 'red';
+    }
+
+    if(what == "company"){
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(3);
+      label.style.color = 'red';
+    }
+  }
+  setColorGreen(what: string){
+    if (what == 'email') {
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(0);
+      label.style.color = 'green';
+    }
+    if(what == "password"){
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(1);
+      label.style.color = 'green';
+    }
+    if(what == "check"){
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(2);
+      label.style.color = 'green';
+    }
+    if(what == "company"){
+      var label = <HTMLLabelElement> document.getElementsByClassName('col-md-4').item(3);
+      label.style.color = 'green';
+    }
+  }
+
   ngOnInit() {
   }
 

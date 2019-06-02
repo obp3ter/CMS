@@ -1,0 +1,23 @@
+.card {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  width:30em;
+  height:18em;
+  margin-top: -9em; /*set to a negative number 1/2 of your height*/
+  margin-left: -15em; /*set to a negative number 1/2 of your width*/
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 2px 2px 2px 7px rgba(0,216,255,0.2) ;
+  box-shadow: 2px 2px 2px 7px rgba(0,216,255,0.2) ;
+
+}
+
+
+
+.form-control{
+  position: sticky;
+}
+
+.card-header {
+  font-size: 30px;
+}

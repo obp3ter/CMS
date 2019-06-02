@@ -28,13 +28,13 @@ import { ChairComponent } from './chair/chair.component';
 import { RegisterComponent } from './register/register.component';
 import { RegisterListenerComponent } from './register/register-listener/register-listener.component';
 import { ReviewProposalComponent } from './proposal/review-proposal/review-proposal.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
     BooksComponent,
     PrintBookComponent,
     AddBookComponent,
@@ -55,6 +55,7 @@ import { ReviewProposalComponent } from './proposal/review-proposal/review-propo
     ChairComponent,
     RegisterComponent,
     RegisterListenerComponent,
+    AdminComponent,
     ReviewProposalComponent,
 
   ],

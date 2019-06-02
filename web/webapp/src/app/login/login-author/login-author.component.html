@@ -1,4 +1,5 @@
 <div class="card">
+  <div class="card-header">Log in as Author!</div>
   <div class="card-body">
     <form [formGroup]="angForm" novalidate>
       <div class="form-group">
@@ -6,19 +7,22 @@
         <input type="text" class="form-control" formControlName="author_email" #author_email />
       </div>
       <div *ngIf="angForm.controls['author_email'].invalid && (angForm.controls['author_email'].dirty || angForm.controls['author_email'].touched)" class="alert alert-danger">
-        <div *ngIf="angForm.controls['author_email'].errors.required">
-          Email is required.
+        <div *ngIf="angForm.controls['author_email'].errors.required;">
+          {{this.setColorRed('email')}}
         </div>
+
       </div>
+      <div *ngIf="angForm.controls['author_email'].dirty && angForm.controls['author_email'].valid">{{this.setColorGreen('email')}}</div>
       <div class="form-group">
         <label class="col-md-4">Password</label>
         <input type="password" class="form-control" formControlName="author_password" #author_password />
       </div>
       <div *ngIf="angForm.controls['author_password'].invalid && (angForm.controls['author_password'].dirty || angForm.controls['author_password'].touched)" class="alert alert-danger">
-        <div *ngIf="angForm.controls['author_password'].errors.required">
-          Password is required.
+        <div *ngIf="angForm.controls['author_password'].errors.required" >
+          {{this.setColorRed('password')}}
         </div>
       </div>
+      <div *ngIf="angForm.controls['author_password'].dirty && angForm.controls['author_password'].valid">{{this.setColorGreen('password')}}</div>
       <div class="form-group">
         <button (click)="loginAuthor(author_email.value,author_password.value)"
                 [disabled]="angForm.pristine || angForm.invalid"
