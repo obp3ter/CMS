@@ -7,7 +7,6 @@ import cms.core.model.Reviewer;
 import cms.core.repository.ListenerRepository;
 import cms.core.repository.SessionRepository;
 import cms.core.repository.ReviewerRepository;
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

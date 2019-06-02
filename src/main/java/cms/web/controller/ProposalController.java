@@ -10,7 +10,6 @@ import cms.web.dto.ProposalDto;
 import cms.web.dto.ReviewerDto;
 import cms.web.dto.StringDto;
 import cms.web.payload.UploadFileResponse;
-import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
