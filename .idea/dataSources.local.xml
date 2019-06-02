@@ -10,5 +10,23 @@
       <user-name>postgres</user-name>
       <introspection-schemas>@:@</introspection-schemas>
     </data-source>
+    <data-source name="postgres@0.0.0.0" uuid="cded68be-1b20-49c2-b27b-2e68b6952302">
+      <database-info product="PostgreSQL" version="11.2 (Debian 11.2-1.pgdg90+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="11.2" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-schemas>@:@</introspection-schemas>
+    </data-source>
+    <data-source name="zjbfchma@manny.db.elephantsql.com" uuid="913fa241-d52e-47a6-bc48-6be60c057cab">
+      <database-info product="PostgreSQL" version="10.5 (Ubuntu 10.5-2.pgdg14.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="10.5" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>zjbfchma</user-name>
+      <introspection-schemas>@:@</introspection-schemas>
+    </data-source>
   </component>
 </project>

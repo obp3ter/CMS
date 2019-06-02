@@ -2,48 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abe84e7f-ee4a-4939-9c52-d6f6605a2d72" name="Default Changelist" comment="Merge branch 'backend' of https://github.com/obp3ter/CMS into backend&#10;&#10;# Conflicts:&#10;#&#9;web/webapp/src/app/shared/services/listener.service.ts">
-      <change afterPath="$PROJECT_DIR$/web/webapp/src/assets/2000x1000-Conference-2016.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/register/register.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/register/register.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/app/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/app/register/register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/webapp/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/webapp/src/styles.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -69,67 +33,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="RPI" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="RPI" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="RPI" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mpp: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="RPI" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mpp: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="RPI" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mpp: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="RPI" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mpp: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="RPI" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mpp: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="proposals_reviews: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="RPI" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mpp: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="reviewers: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="DefaultGradleProjectSettings">
@@ -162,93 +66,94 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.css">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cms/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="210">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.css">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.css">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="390">
+              <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.html">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="60" lean-forward="true" selection-start-line="6" selection-start-column="60" selection-end-line="6" selection-end-column="60" />
+            <state relative-caret-position="75">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.spec.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="120" selection-start-line="23" selection-end-line="24" />
+            <state>
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cded68be-1b20-49c2-b27b-2e68b6952302/console_1.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/913fa241-d52e-47a6-bc48-6be60c057cab/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cded68be-1b20-49c2-b27b-2e68b6952302/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -265,7 +170,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>;</find>
       <find>dto</find>
       <find>Proposa</find>
       <find>Paper</find>
@@ -295,6 +199,7 @@
       <find>`deadline-${{name}}`</find>
       <find>Author</find>
       <find>author</find>
+      <find>port</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -342,7 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cms/web/controller/ProposalController.java" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/author/author.component.ts" />
@@ -359,7 +263,6 @@
         <option value="$PROJECT_DIR$/web/webapp/src/app/chair/chair.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/shared/services/listener.service.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/web/webapp/package.json" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/app.module.ts" />
@@ -374,15 +277,11 @@
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-listener/login-listener.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login.component.css" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register.component.css" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login.component.html" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.css" />
         <option value="$PROJECT_DIR$/web/webapp/package-lock.json" />
-        <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.css" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.ts" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.html" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.ts" />
@@ -393,6 +292,12 @@
         <option value="$PROJECT_DIR$/web/webapp/src/app/login/login-reviewer/login-reviewer.component.css" />
         <option value="$PROJECT_DIR$/web/webapp/src/styles.css" />
         <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.css" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cded68be-1b20-49c2-b27b-2e68b6952302/console_1.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/web/webapp/src/app/app.component.css" />
       </list>
     </option>
   </component>
@@ -446,39 +351,7 @@
               <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="server" type="b2602c69:ProjectViewProjectNode" />
@@ -505,61 +378,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="register-author" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-              <item name="register-listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="reviewer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="web" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -579,7 +397,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web/webapp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -630,7 +448,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI">
+  <component name="RunManager" selected="Spring Boot.CMSServer">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="server" />
       <option name="VM_PARAMETERS" />
@@ -739,7 +557,7 @@
       <workItem from="1558894110656" duration="516000" />
       <workItem from="1558894943097" duration="144000" />
       <workItem from="1558895310205" duration="928000" />
-      <workItem from="1559477917081" duration="16310000" />
+      <workItem from="1559477917081" duration="18620000" />
     </task>
     <task id="LOCAL-00001" summary="Author save getAll,getOne,save done.&#10;File upload one/more,download one done.&#10;Proposal handling Stated.">
       <created>1558118460378</created>
@@ -941,7 +759,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128876000" />
+    <option name="totallyTimeSpent" value="131186000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -975,12 +793,12 @@
       <window_info anchor="bottom" id="TODO" order="7" weight="0.328807" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.33365664" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49946696" weight="0.3258972" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="10" weight="0.3297769" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021322" side_tool="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.4978678" weight="0.32917964" />
-      <window_info anchor="bottom" id="Database Console" order="15" weight="0.32917964" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.328807" />
       <window_info anchor="bottom" id="Spring" order="16" weight="0.32914045" />
       <window_info anchor="bottom" id="Messages" order="17" sideWeight="0.49946696" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -989,7 +807,7 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Gradle" order="5" weight="0.16044776" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.32960597" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="9" />
@@ -1025,45 +843,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'backend' of https://github.com/obp3ter/CMS into backend&#10;&#10;# Conflicts:&#10;#&#9;web/webapp/src/app/shared/services/listener.service.ts" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/tsconfig.spec.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/listener/listener.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/listener/listener.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/input.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/shared/sucess/sucess.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1128,13 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-chair/login-chair.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1159,13 +931,6 @@
     <entry file="file://$PROJECT_DIR$/web/webapp/src/assets/2000x1000-Conference-2016.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/reviewer/reviewer.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1188,23 +953,6 @@
         <state>
           <folding>
             <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1314,17 +1062,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login-author/login-author.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="17" selection-end-column="1" />
+          <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1352,21 +1093,194 @@
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/login/login.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-author/register-author.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="19" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/register/register-listener/register-listener.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cded68be-1b20-49c2-b27b-2e68b6952302/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.2.5/38646ec680de3cdaad06738686a3bc454022345/postgresql-42.2.5-sources.jar!/org/postgresql/core/v3/QueryExecutorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="132" column="4" selection-start-line="132" selection-start-column="4" selection-end-line="132" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.2.5/38646ec680de3cdaad06738686a3bc454022345/postgresql-42.2.5-sources.jar!/org/postgresql/core/v3/ConnectionFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="249" column="42" selection-start-line="249" selection-start-column="42" selection-end-line="249" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://SpringLocalModels/module=server.main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>SpringLocalModels</ID>
+          <OriginalElement>module=server.main</OriginalElement>
+          <nodes>
+            <node x="" y="">module=server.main</node>
+            <node x="" y="">fileset=server.main/Spring Application Context</node>
+            <node x="" y="">cms.App</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration.DispatcherServletConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration.TomcatWebServerFactoryCustomizerConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration.CacheManagerJpaDependencyConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonObjectMapperConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration.PooledDataSourceConfiguration</node>
+            <node x="" y="">hello.App</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.EnableWebMvcConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration.LoggingCodecConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.aop.AopAutoConfiguration.CglibAutoProxyConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.ParameterNamesModuleConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration.DataSourceTransactionManagerConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter.FaviconConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration.JacksonCodecConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration.EnableTransactionManagementConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration.NamedParameterJdbcTemplateConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jdbc.XADataSourceAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.http.codec.CodecsAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration.DispatcherServletRegistrationConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration.JdbcTemplateConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration.TomcatWebSocketConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.aop.AopAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration.TransactionTemplateConfiguration</node>
+            <node x="" y="">org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration</node>
+            <node x="" y="">org.springframework.boot.context.properties.EnableConfigurationProperties</node>
+            <node x="" y="">cms.web.config.WebConfig</node>
+            <node x="" y="">org.springframework.web.servlet.config.annotation.EnableWebMvc</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.4349657868179391" x="826.3850280837655" y="356.75570495480497" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Show filesets as groups</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cms/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cded68be-1b20-49c2-b27b-2e68b6952302/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/913fa241-d52e-47a6-bc48-6be60c057cab/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="70" column="17" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/webapp/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="2" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
         </state>
       </provider>
     </entry>

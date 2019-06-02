@@ -7,5 +7,17 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://obpeter.go.ro:5432/mpp</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="postgres@0.0.0.0" uuid="cded68be-1b20-49c2-b27b-2e68b6952302">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://0.0.0.0:32769/postgres</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="zjbfchma@manny.db.elephantsql.com" uuid="913fa241-d52e-47a6-bc48-6be60c057cab">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://manny.db.elephantsql.com:5432/zjbfchma</jdbc-url>
+    </data-source>
   </component>
 </project>

@@ -23,3 +23,12 @@ body, input[text], button {
 .main {
   background: url("/webapp/src/assets/2000x1000-Conference-2016.jpg") scroll;
 }
+div a{
+  display: inline-block;
+}
+
+.register{
+  margin-left: 10px;
+  border-left: 5px;
+  border-bottom-color: black;
+}

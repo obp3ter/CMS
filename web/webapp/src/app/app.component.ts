@@ -15,4 +15,9 @@ export class AppComponent {
   {
     return sessionStorage.getItem("id")=="undefined";
   }
+
+  checkSession():boolean {
+    return sessionStorage.getItem("id") == null;
+  }
+
 }
