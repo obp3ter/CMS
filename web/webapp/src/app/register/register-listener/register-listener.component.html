@@ -1,0 +1,42 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Listener Email </label>
+        <input type="text" class="form-control" formControlName="listener_email" #listener_email />
+      </div>
+      <div *ngIf="angForm.controls['listener_email'].invalid && (angForm.controls['listener_email'].dirty || angForm.controls['listener_email'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['listener_email'].errors.required">
+          Listener Email is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Listener Password</label>
+        <input type="password" class="form-control" formControlName="listener_password" #listener_password />
+      </div>
+      <div *ngIf="angForm.controls['listener_password'].invalid && (angForm.controls['listener_password'].dirty || angForm.controls['listener_password'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['listener_password'].errors.required">
+          Listener Password is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Listener Password</label>
+        <input type="password" class="form-control" formControlName="listener_password_confirm" #listener_password_confirm />
+      </div>
+      <div *ngIf="angForm.controls['listener_password_confirm'].invalid && (angForm.controls['listener_password_confirm'].dirty || angForm.controls['listener_password_confirm'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['listener_password_confirm'].errors.required">
+          Listener Password Confirm is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <button (click)="addListener(listener_email.value,listener_password.value,listener_password_confirm.value)"
+                [disabled]="angForm.pristine || angForm.invalid"
+                class="btn btn-primary">
+          Register
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
