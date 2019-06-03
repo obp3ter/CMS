@@ -3,10 +3,7 @@ package cms.web.controller;
 import cms.core.model.Listener;
 import cms.core.model.Session;
 import cms.core.model.Reviewer;
-import cms.core.services.AuthorService;
-import cms.core.services.ChairService;
-import cms.core.services.FileStorageService;
-import cms.core.services.SessionService;
+import cms.core.services.*;
 import cms.web.converter.SessionConverter;
 import cms.web.converter.ReviewerConverter;
 import cms.web.dto.SessionDto;
@@ -32,6 +29,8 @@ import java.util.stream.Collectors;
 @RestController
 public class SessionController {
     @Autowired
+    private ProposalService proposalService;
+    @Autowired
     private SessionService sessionService;
     @Autowired
     private ChairService chairService;
@@ -44,7 +43,6 @@ public class SessionController {
     @RequestMapping(value = "/sessions", method = RequestMethod.POST)
     SessionDto saveSession(@RequestParam("speaker") Integer speaker,
                            @RequestParam("chair") Integer chair,
-                           @RequestParam("paperFileName") String paperFileName,
                            @RequestParam("time")String time,
                            @RequestParam("date")String date) throws Exception
     {
@@ -55,7 +53,7 @@ public class SessionController {
                 chairService.getAll().stream().filter(a -> a.getId().equals(chair)).collect(Collectors.toList()).get(0),
                 authorService.getAll().stream().filter(a -> a.getId().equals(speaker)).collect(Collectors.toList()).get(0),
                 new ArrayList<Listener>(),
-                paperFileName,
+                proposalService.getAllProposals().stream().filter(p->p.getAuthorID().equals(speaker)).collect(Collectors.toList()).get(0).getPaperFileName(),
                 new SimpleDateFormat("dd/MM/yyyy").parse(date),
                 time
                 );
@@ -70,7 +68,8 @@ public class SessionController {
     }
 
     @RequestMapping(value = "/sessions", method = RequestMethod.GET)
-    List<SessionDto> getSession(@RequestParam(required = false, defaultValue = "-1") Integer id) {
+    List<SessionDto> getSession(@RequestParam(required = false, defaultValue = "-1") Integer id,
+                                @RequestParam(required = false,defaultValue = "-1") Integer authorID) {
 
         List<Session> sessions = sessionService.getAllSessions();
 

@@ -1,0 +1,32 @@
+<span *ngIf="showAdd">
+<div class="card">
+  <div class="card-header">Add a new session!</div>
+  <div class="card-body">
+    <div class="form-group">
+      <label class="col-md-4">Speaker id </label>
+      <input type="text" class="form-control" formControlName="author_email" #speaker />
+    </div>
+    <div class="form-group">
+      <label class="col-md-4">Chair id</label>
+      <input type="password" class="form-control" formControlName="author_password" #chair />
+    </div>
+    <div class="form-group">
+      <label class="col-md-4">Time</label>
+      <input type="password" class="form-control" formControlName="author_password_confirm" #time />
+    </div>
+    <div class="form-group">
+      <label class="col-md-4">Date (yyyy-mm-dd) </label>
+      <input type="text" class="form-control" formControlName="author_company" #date />
+    </div>
+    <div class="form-group">
+      <button (click)="addSession(speaker.value,chair.value,time.value, date.value)"
+              class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+  </div>
+</div>
+</span>
+
+
+

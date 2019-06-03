@@ -3,9 +3,10 @@
 <div class = "navigation">
   <button (click)="this.showDeadline()">Modify deadlines</button>
   <button>Assign papers</button>
+  <button (click)="addSession()">Add Session!</button>
 </div>
 
 <div class = "child">
   <app-deadline-input [isChair]="chairDeadline"></app-deadline-input>
-
+  <app-add-session [showAdd] = "showSessionAdd"></app-add-session>
 </div>

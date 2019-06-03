@@ -3,6 +3,16 @@
 <h2>Logged in as <b>author</b> with email: <span class = "emailLogg">{{authorEmail}}</span></h2>
 <br>
 <h2>Your Files:</h2>
+<div>
 <button> <a href="/proposals/add-proposal">Add Proposal</a></button>
-
+<button (click)="showSession()">Show your sessions</button>
+<div class = "showSessions" *ngIf="showSessions">
+  <div *ngFor="let session of sessions">
+    <h4>{{session.speaker}}</h4>
+    <h4>{{session.paperFileName}}</h4>
+    <h4>{{session.date}}</h4>
+    <h4>{{session.time}}</h4>
+  </div>
+</div>
 <app-print-proposal></app-print-proposal>
+</div>

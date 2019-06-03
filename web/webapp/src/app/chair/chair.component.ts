@@ -13,13 +13,20 @@ export class ChairComponent implements OnInit {
   chairId: number;
   chairEmail : string;
   chairDeadline : boolean
+  showSessionAdd : boolean;
   constructor(private route: ActivatedRoute,  private router: Router,public chairService : ChairService) { }
 
   public showDeadline(){
     this.chairDeadline = !this.chairDeadline;
   }
 
+  public addSession(){
+    this.showSessionAdd = !this.showSessionAdd;
+  }
+
   ngOnInit() {
+    this.showSessionAdd = false;
+    this.chairDeadline  = false;
     console.log(sessionStorage.getItem("userType")!="chair")
     if(sessionStorage.getItem("userType")!="chair"){
       this.router.navigate(['login//login-chair'], { skipLocationChange: true});}
