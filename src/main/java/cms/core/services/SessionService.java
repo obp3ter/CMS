@@ -1,13 +1,17 @@
 package cms.core.services;
 
 import cms.core.model.Session;
+import cms.core.model.Reviewer;
 
 import java.util.List;
 
 public interface SessionService {
-    void addSession(Session s);
-    void updateSession(Session s);
-    List<Session> getAll();
-    Session getSession(int id);
+    List<Session> getAllSessions();
+
+    Session saveSession(Session session);
+
+    Session updateSession(Integer id, Session session);
+
+    void joinSession(Integer sessionID, Integer listenerID);
 
 }

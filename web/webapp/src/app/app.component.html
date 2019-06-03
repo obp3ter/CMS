@@ -1,0 +1,14 @@
+<div class="main">
+  <h1> {{title}}</h1>
+
+<nav>
+  <div *ngIf = "this.checkSession()">
+  <a routerLink="login" class = "login">Log in</a>
+  <a routerLink="register" class = "register">Register</a>
+  </div>
+  <div><a routerLink="" (click)="logout()">Log out</a></div>
+</nav>
+
+<router-outlet></router-outlet>
+
+</div>

@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-header">Log in as Listener!</div>
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Email </label>
+        <input type="text" class="form-control" formControlName="listener_email" #listener_email />
+      </div>
+      <div *ngIf="angForm.controls['listener_email'].invalid && (angForm.controls['listener_email'].dirty || angForm.controls['listener_email'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['listener_email'].errors.required">
+          {{this.setColorRed('email')}}
+        </div>
+      </div>
+      <div *ngIf="angForm.controls['listener_email'].dirty && angForm.controls['listener_email'].valid">{{this.setColorGreen('email')}}</div>
+
+      <div class="form-group">
+        <label class="col-md-4">Password</label>
+        <input type="password" class="form-control" formControlName="listener_password" #listener_password />
+      </div>
+      <div *ngIf="angForm.controls['listener_password'].invalid && (angForm.controls['listener_password'].dirty || angForm.controls['listener_password'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['listener_password'].errors.required">
+          {{this.setColorRed('password')}}
+        </div>
+      </div>
+      <div *ngIf="angForm.controls['listener_password'].dirty && angForm.controls['listener_password'].valid">{{this.setColorGreen('password')}}</div>
+
+      <div class="form-group">
+        <button (click)="loginListener(listener_email.value,listener_password.value)"
+                [disabled]="angForm.pristine || angForm.invalid"
+                class="btn btn-primary">
+          Login
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+

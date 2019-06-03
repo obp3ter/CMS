@@ -1,0 +1,40 @@
+<br>
+<!--<div *ngIf="selectedBook && books.indexOf(selectedBook) != -1">-->
+<!--<label>-->
+<!--Book {{selectedBook.name}} was selected!-->
+<!--</label>-->
+<!--&lt;!&ndash;<a routerLink="/books/details/{{selectedBook.id}}">&ndash;&gt;-->
+<!--&lt;!&ndash;<button>Details</button>&ndash;&gt;-->
+<!--&lt;!&ndash;</a>&ndash;&gt;-->
+<!--</div>-->
+<br>
+<button style="visibility: hidden"> Details</button>
+<div>
+  <label>Sort: </label>
+  <select (change)="sortEm($event.target.value)">
+    <option value="0">None</option>
+    <option value="1">Name</option>
+    <option value="2">Price</option>
+    <option value="3">Author</option>
+  </select>
+</div>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let book of books"
+      [class.selected]="book===selectedBook">
+    <td> {{book.title}}</td>
+    <td> {{book.author}}</td>
+    <td> {{book.price}}</td>
+    <td> <button (click)="deleteBook(book.id)"
+                 class="btn btn-primary">
+      Delete Book
+    </button></td>
+    <td><a href="/books/update-book/{{book.id}}">Update Book</a></td>
+  </tr>
+</table>

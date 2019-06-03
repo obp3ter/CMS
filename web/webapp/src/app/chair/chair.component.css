@@ -1,0 +1,22 @@
+.emailLogg{
+  background-color: #00dbd8; border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.navigation {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.child {
+  float: right;
+  margin-right: 25%;
+}
+
+.navigation button{
+  margin-bottom: 5px;
+}

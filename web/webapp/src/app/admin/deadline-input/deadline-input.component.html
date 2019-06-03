@@ -1,0 +1,35 @@
+<span *ngIf="show || isChair">
+<div class="card">
+  <div class="card-header" style="font-size: 20px;">Input dates!</div>
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Abstract Deadline</label>
+        <input type="date" class="form-control" formControlName="date_abstract" #date_abstract />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Papers Deadline</label>
+        <input type="date" class="form-control" formControlName="date_papers" #date_papers />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Bidding Deadline</label>
+        <input type="date" class="form-control" formControlName="date_biddings" #date_biddings />
+      </div>
+      <div class="form-group">
+        <div *ngIf="isChair === false;else admin"><button (click)="addDate(date_abstract.value,date_papers.value,date_biddings.value)"
+                                               class="btn btn-primary">
+          Submit
+        </button></div>
+        <div #admin>
+        <button (click)="updateDate(date_abstract.value,date_papers.value,date_biddings.value)"
+                class="btn btn-primary">
+          Submit
+        </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</span>
+
+

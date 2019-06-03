@@ -1,12 +1,8 @@
 package cms.core.repository;
 
-import cms.core.model.Proposal;
-import org.springframework.data.jpa.repository.JpaRepository;
+import cms.core.model.Listener;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.io.Serializable;
-
-public interface ListenerRepository <ID extends
-        Serializable>
-        extends JpaRepository<Proposal, ID> {
-
+@Transactional
+public interface ListenerRepository extends BaseUserRepository<Listener, Integer> {
 }

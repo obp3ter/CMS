@@ -16,13 +16,14 @@ import java.util.List;
 public class Session {
     @Id
     @GeneratedValue
-    protected Integer id;
+    private Integer id;
     @OneToOne(cascade = CascadeType.ALL)
     Chair chair;
     @OneToOne(cascade = CascadeType.ALL)
     Author speaker;
     @OneToMany(cascade = CascadeType.ALL)
     List<Listener> listeners;
+    String paperFileName;
     Date date;
     String time;
 }

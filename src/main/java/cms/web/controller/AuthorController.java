@@ -2,15 +2,18 @@ package cms.web.controller;
 
 import cms.core.model.Author;
 import cms.core.model.Chair;
+import cms.core.model.Listener;
 import cms.core.services.AuthorService;
 import cms.core.services.ChairService;
+import cms.core.services.ListenerService;
+import cms.web.converter.AuthorConverter;
 import cms.web.converter.ChairConverter;
+import cms.web.converter.ListenerConverter;
+import cms.web.dto.AuthorDto;
 import cms.web.dto.ChairDto;
-import lombok.var;
+import cms.web.dto.ListenerDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import cms.web.converter.AuthorConverter;
-import cms.web.dto.AuthorDto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,9 +22,12 @@ import java.util.List;
 public class AuthorController {
     @Autowired
     AuthorService authorService;
-
+    @Autowired
+    ListenerService listenerService;
     @Autowired
     AuthorConverter authorConverter;
+    @Autowired
+    ListenerConverter listenerConverter;
     @Autowired
     ChairService chairService;
     @Autowired
@@ -30,7 +36,10 @@ public class AuthorController {
 
 
     @RequestMapping(value = "/authors", method = RequestMethod.POST)
-    AuthorDto saveAuthor(@RequestParam("email") String email, @RequestParam("password") String password,@RequestParam("company") String company) {
+    AuthorDto saveAuthor(@RequestParam("email") String email,
+                         @RequestParam("password") String password,
+                         @RequestParam("company") String company
+    ) {
 
         AuthorDto dto = new AuthorDto(email,password,company);
 
@@ -73,7 +82,8 @@ public class AuthorController {
     }
 
     @RequestMapping(value = "/chairs", method = RequestMethod.POST)
-    ChairDto saveChair(@RequestParam("email") String email, @RequestParam("password") String password) {
+    ChairDto saveChair(@RequestParam("email") String email
+            , @RequestParam("password") String password) {
 
         ChairDto dto = new ChairDto(email,password);
 
@@ -112,6 +122,55 @@ public class AuthorController {
         List<ChairDto> results = new ArrayList<ChairDto>();
         results.add(result);
         return results;
+    }
+
+    @RequestMapping(value = "/listeners", method = RequestMethod.POST)
+    ListenerDto saveListener(@RequestParam("email") String email,
+                             @RequestParam("password") String password){
+
+        ListenerDto dto = new ListenerDto(email,password,false);
+
+        Listener saved = this.listenerService.saveListener(
+                listenerConverter.convertDtoToModel(dto)
+        );
+        ListenerDto result = listenerConverter.convertModelToDto(saved);
+
+
+        return result;
+    }
+
+
+    @RequestMapping(value = "/listeners", method = RequestMethod.GET)
+    List<ListenerDto> getListener(@RequestParam(value ="id",required = false, defaultValue = "-1") Integer id,
+                            @RequestParam(value = "email",required = false, defaultValue = "-1") String email
+    ) {
+
+        List<Listener> listeners = listenerService.getAll();
+
+        if (id == -1 && email.equals("-1"))
+            return new ArrayList<>(listenerConverter.convertModelsToDtos(listeners));
+
+        Listener listener = new Listener();
+        listeners.stream().forEach(s -> {
+            if (s.getId() == id || s.getEmail().equals(email)) {
+                listener.setId(s.getId());
+                listener.setEmail(s.getEmail());
+                listener.setPassword(s.getPassword());
+            }
+        });
+        ListenerDto result = new ListenerDto(listener.getEmail(), listener.getPassword(),listener.isPayment());
+
+        result.setId(listener.getId());
+
+        List<ListenerDto> results = new ArrayList<ListenerDto>();
+        results.add(result);
+        return results;
+    }
+
+    @PostMapping("listeners/pay")
+    void pay(@RequestParam("listenerID") Integer listenerId)
+    {
+        listenerService.pay(listenerId);
     }
 
 

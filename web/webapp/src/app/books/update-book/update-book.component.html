@@ -1,0 +1,38 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Book Title</label>
+        <input type="text" class="form-control" formControlName="book_title" #book_title [(ngModel)] = "book.title" />
+      </div>
+      <div *ngIf="angForm.controls['book_title'].invalid && (angForm.controls['book_title'].dirty || angForm.controls['book_title'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['book_title'].errors.required">
+          Book Title is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Book Author </label>
+        <input type="text" class="form-control" formControlName="book_author" #book_author [(ngModel)] = "book.author" />
+      </div>
+      <div *ngIf="angForm.controls['book_author'].invalid && (angForm.controls['book_author'].dirty || angForm.controls['book_author'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['book_author'].errors.required">
+          Book Author is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Book Price </label>
+        <input type="text" class="form-control" formControlName="book_price" #book_price [(ngModel)] = "book.price" />
+      </div>
+      <div *ngIf="angForm.controls['book_price'].invalid && (angForm.controls['book_price'].dirty || angForm.controls['book_price'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['book_price'].errors.required">
+          Book Price is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <button (click)="updateBook(book_title.value, book_author.value, book_price.value)"
+                [disabled]="angForm.invalid"
+                class="btn btn-primary">Update Book</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 public class ProposalController {
@@ -72,9 +72,9 @@ public class ProposalController {
 
         var result = new ArrayList<UploadFileResponse>();
 
-        if(which=="abstract")
+        if(which.equals("abstract"))
             proposal.setAbstractFileName(file.getOriginalFilename());
-        else if(which=="paper")
+        else if(which.equals("paper"))
             proposal.setPaperFileName(file.getOriginalFilename());
         else
             throw new Exception("error");
@@ -93,15 +93,15 @@ public class ProposalController {
     }
 
     @RequestMapping(value = "/proposals", method = RequestMethod.POST)
-    ProposalDto saveProposal(@RequestParam("proposalID") Integer aID,
-                             @RequestParam("proposalID") Integer pID,
+    ProposalDto saveProposal(@RequestParam(value = "proposalID",required = false, defaultValue = "0") Integer pID,
+                             @RequestParam("authorID") Integer aID,
                              @RequestParam("proposalName") String proposalName,
                              @RequestParam("keyWords") String keyWords,
                              @RequestParam("topics") String topics,
-                             @RequestParam("listOfReviewers") String listOfReviewers,
-                             @RequestParam("listOfReviewers") List<Integer> reviewers,
-                             @RequestParam("listOfRefusers") List<Integer> refusers,
-                             @RequestParam("assignedReviewers") List<Integer> assignedReviewers
+                             @RequestParam(value = "listOfReviewers",required = false,defaultValue = "") String listOfReviewers,
+                             @RequestParam(value = "listOfReviewers",required = false, defaultValue = "") List<Integer> reviewers,
+                             @RequestParam(value = "listOfRefusers",required = false, defaultValue = "") List<Integer> refusers,
+                             @RequestParam(value = "assignedReviewers",required = false, defaultValue = "") List<Integer> assignedReviewers
                              )
     {
 
@@ -117,50 +117,66 @@ public class ProposalController {
     }
 
     @RequestMapping(value = "/proposals", method = RequestMethod.GET)
-    List<ProposalDto> getProposal(@RequestParam(required = false, defaultValue = "-1") Integer id)
+    List<ProposalDto> getProposal(@RequestParam(required = false, defaultValue = "-1") Integer id,
+                                  @RequestParam(required = false, defaultValue = "-1") Integer authorId,
+                                  @RequestParam(required = false,defaultValue = "-1") Integer reviewerId,
+                                  @RequestParam(required = false,defaultValue = "") String phase
+                                    )
     {
 
         List<Proposal> proposals = proposalService.getAllProposals();
 
-        if (id == -1)
-            return new ArrayList<>(proposalConverter.convertModelsToDtos(proposals));
+        if(reviewerId == -1)
+        {
+            if (id == -1 && authorId == -1)
+                return new ArrayList<>(proposalConverter.convertModelsToDtos(proposals));
 
-        Proposal proposal = new Proposal();
-        proposals.stream().forEach(s -> {
-            if (s.getId() == id) {
-                proposal.setId(s.getId());
-                proposal.setAuthorID(s.getAuthorID());
-                proposal.setAbstractFileName(s.getAbstractFileName());
-                proposal.setPaperFileName(s.getPaperFileName());
-                proposal.setProposalName(s.getProposalName());
-                proposal.setKeyWords(s.getKeyWords());
-                proposal.setTopics(s.getTopics());
-                proposal.setListOfAuthors(s.getListOfAuthors());
-                proposal.setReviewers(s.getReviewers());
-                proposal.setRefusers(s.getRefusers());
-                proposal.setAssignedReviewers(s.getAssignedReviewers());
-                proposal.setReviews(s.getReviews());
-            }
-        });
-        ProposalDto result = new ProposalDto(proposal.getId(),
-                proposal.getAuthorID(),
-                proposal.getAbstractFileName(),
-                proposal.getPaperFileName(),
-                proposal.getProposalName(),
-                proposal.getKeyWords(),
-                proposal.getTopics(),
-                proposal.getListOfAuthors(),
-                proposal.getReviewers(),
-                proposal.getRefusers(),
-                proposal.getAssignedReviewers(),
-                proposal.getReviews()
-        );
+            Proposal proposal = new Proposal();
+            proposals.stream().forEach(s -> {
+                if (s.getId() == id || s.getAuthorID() == authorId) {
+                    proposal.setId(s.getId());
+                    proposal.setAuthorID(s.getAuthorID());
+                    proposal.setAbstractFileName(s.getAbstractFileName());
+                    proposal.setPaperFileName(s.getPaperFileName());
+                    proposal.setProposalName(s.getProposalName());
+                    proposal.setKeyWords(s.getKeyWords());
+                    proposal.setTopics(s.getTopics());
+                    proposal.setListOfAuthors(s.getListOfAuthors());
+                    proposal.setReviewers(s.getReviewers());
+                    proposal.setRefusers(s.getRefusers());
+                    proposal.setAssignedReviewers(s.getAssignedReviewers());
+                    proposal.setReviews(s.getReviews());
+                }
+            });
+            ProposalDto result = new ProposalDto(proposal.getId(),
+                    proposal.getAuthorID(),
+                    proposal.getAbstractFileName(),
+                    proposal.getPaperFileName(),
+                    proposal.getProposalName(),
+                    proposal.getKeyWords(),
+                    proposal.getTopics(),
+                    proposal.getListOfAuthors(),
+                    proposal.getReviewers(),
+                    proposal.getRefusers(),
+                    proposal.getAssignedReviewers(),
+                    proposal.getReviews()
+            );
 
-        result.setId(proposal.getId());
+            result.setId(proposal.getId());
 
-        var results = new ArrayList<ProposalDto>();
-        results.add(result);
-        return results;
+            var results = new ArrayList<ProposalDto>();
+            results.add(result);
+            return results;
+        }
+        else
+        {
+            var res=new ArrayList<>(proposalConverter.convertModelsToDtos(proposals.stream().filter(proposal ->(
+                    (phase.equals("review") && !(!(proposal.getAssignedReviewers().contains(reviewerId)) || (proposal.getReviews().stream().anyMatch(r -> r.getReviewerID() == reviewerId))) ) ||
+                            (!phase.equals("review") && !(proposal.getRefusers().contains(reviewerId) || proposal.getReviewers().contains(reviewerId))))
+
+            ).collect(Collectors.toList())));
+            return res;
+        }
     }
 
     @RequestMapping(value = "/reviewers", method = RequestMethod.POST)
@@ -386,6 +402,22 @@ public class ProposalController {
         });
 
         proposalService.reviewPaper(proposalID,proposal,reviewerID,grade);
+    }
+
+    @PostMapping("/proposals/setDeadlines")
+    void setDeadlines(@RequestParam("type") String type,@RequestParam("date") String dt) {
+        if (type.equals("abstracts") || type.equals("bidding") || type.equals("papers")) {
+            try {
+                System.out.println("Im here");
+                Connection connection = DriverManager.getConnection(dsURL, dsUser, dsPass);
+                Statement statement = connection.createStatement();
+                Date date = new SimpleDateFormat("yyyy/MM/dd").parse(dt);
+                statement.execute ("DELETE FROM deadline WHERE name =" + "\'" + type + "\'");
+                statement.execute("INSERT INTO deadline (name,date) VALUES ("+"\'" +type +"\'" +"," +"\'" + dt +"\'" + ")");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 
