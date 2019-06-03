@@ -17,11 +17,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -403,6 +402,22 @@ public class ProposalController {
         });
 
         proposalService.reviewPaper(proposalID,proposal,reviewerID,grade);
+    }
+
+    @PostMapping("/proposals/setDeadlines")
+    void setDeadlines(@RequestParam("type") String type,@RequestParam("date") String dt) {
+        if (type.equals("abstracts") || type.equals("bidding") || type.equals("papers")) {
+            try {
+                System.out.println("Im here");
+                Connection connection = DriverManager.getConnection(dsURL, dsUser, dsPass);
+                Statement statement = connection.createStatement();
+                Date date = new SimpleDateFormat("yyyy/MM/dd").parse(dt);
+                statement.execute ("DELETE FROM deadline WHERE name =" + "\'" + type + "\'");
+                statement.execute("INSERT INTO deadline (name,date) VALUES ("+"\'" +type +"\'" +"," +"\'" + dt +"\'" + ")");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 

@@ -9,7 +9,7 @@ import {ChairService} from "@app/shared/services/chair.service";
 })
 export class ChairRegisterComponent implements OnInit {
 
-  @Input() show : boolean;
+  @Input() show2 : boolean;
 
   constructor(private fb: FormBuilder,public chairService : ChairService) { }
 
@@ -17,16 +17,16 @@ export class ChairRegisterComponent implements OnInit {
 
   createForm() {
     this.angForm = this.fb.group({
-      chair_email: ['', Validators.required ],
-      chair_password: ['', Validators.required ],
-      chair_password_confirm: ['', Validators.required ]});
+      Chair_email: ['', Validators.required ],
+      Chair_password: ['', Validators.required ],
+      Chair_password_confirm: ['', Validators.required ]});
   }
 
   addChair(chair_email,chair_password,chair_password_confirm){
     if(chair_password == chair_password_confirm){
       this.chairService.addChair(chair_email,chair_password);
     }
-    this.show = false;
+    this.show2 = false;
   }
 
   setColorRed(what: string) {

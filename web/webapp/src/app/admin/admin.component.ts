@@ -12,16 +12,12 @@ export class AdminComponent implements OnInit {
   constructor() { }
 
   inputChair(){
-    if(this.deadlines){
-      this.deadlines = false;
-    }
+    this.deadlines = false;
     this.chair = true;
   }
 
   inputDeadlines(){
-    if(this.chair){
-      this.chair = false;
-    }
+    this.chair = false;
     this.deadlines = true;
   }
 

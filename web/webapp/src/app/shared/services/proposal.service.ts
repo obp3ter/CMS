@@ -33,9 +33,9 @@ export class ProposalService {
   {
     return this.httpClient.get<Array<Proposal>>(this.path+"?reviewerId="+id+"&phase=review")
   }
-  updateFiles(type,file)
+  updateFiles(file)
   {
-    this.httpClient.post(`${this.path}/uploadfile`, type, data)
+    this.httpClient.post(`${this.path}/uploadfile`,file)
       .subscribe(res => console.log('Done'));
   }
 
@@ -83,6 +83,13 @@ export class ProposalService {
       console.log("innerlog",stud,(stud["value"]));
       sessionStorage.setItem("deadline-"+name,stud["value"]);
     });
+  }
+
+  addDeadline(type: string,date:string){
+    const form = new FormData();
+    form.append("type",type);
+    form.append("date",date);
+    this.httpClient.post(`${this.path}/setDeadlines`,form).subscribe(res => console.log("Done"));
   }
 
   isBeforeDeadline(name)
