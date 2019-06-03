@@ -33,9 +33,9 @@ export class ProposalService {
   {
     return this.httpClient.get<Array<Proposal>>(this.path+"?reviewerId="+id+"&phase=review")
   }
-  updateFiles(data)
+  updateFiles(type,file)
   {
-    this.httpClient.post(`${this.path}/uploadfile`, data)
+    this.httpClient.post(`${this.path}/uploadfile`, type, data)
       .subscribe(res => console.log('Done'));
   }
 

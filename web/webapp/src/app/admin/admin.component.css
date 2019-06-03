@@ -11,6 +11,7 @@ span button {
 
 .admin .child-component {
   float: right;
+  margin-right: 25%;
 }
 
 

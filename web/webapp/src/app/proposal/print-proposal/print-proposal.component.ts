@@ -29,7 +29,8 @@ export class PrintProposalComponent implements OnInit {
       else if(sessionStorage.getItem("userType")=="reviewer") {
         this.getAllbyIdReviewer();
       }
-      this.isBeforeDeadline('abstracts')
+      this.isBeforeDeadline('abstracts');
+    this.getAllbyIdAuthor();
   }
 
   getAllProposals(): void {

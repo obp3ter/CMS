@@ -26,6 +26,7 @@ export class ChairRegisterComponent implements OnInit {
     if(chair_password == chair_password_confirm){
       this.chairService.addChair(chair_email,chair_password);
     }
+    this.show = false;
   }
 
   setColorRed(what: string) {
