@@ -4,9 +4,19 @@
   <button (click)="this.showDeadline()">Modify deadlines</button>
   <button>Assign papers</button>
   <button (click)="addSession()">Add Session!</button>
+  <button (click)="this.router.navigate(['/proposals/assign-proposal'] );">Assign papers</button>
+  <button (click)="this.showProposals()">Show Proposals</button>
+
 </div>
 
 <div class = "child">
   <app-deadline-input [isChair]="chairDeadline"></app-deadline-input>
   <app-add-session [showAdd] = "showSessionAdd"></app-add-session>
+
 </div>
+
+<ng-container *ngIf="proposalsShow">
+  <div class = "child_2">
+    <app-print-proposal></app-print-proposal>
+  </div>
+</ng-container>

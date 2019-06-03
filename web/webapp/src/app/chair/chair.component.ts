@@ -13,13 +13,17 @@ export class ChairComponent implements OnInit {
   chairId: number;
   chairEmail : string;
   chairDeadline : boolean
-  showSessionAdd : boolean;
   constructor(private route: ActivatedRoute,  private router: Router,public chairService : ChairService) { }
 
   public showDeadline(){
+    this.proposalsShow =false;
     this.chairDeadline = !this.chairDeadline;
   }
 
+  public showProposals(){
+    this.chairDeadline=false;
+    this.proposalsShow = !this.proposalsShow;
+  }
   public addSession(){
     this.showSessionAdd = !this.showSessionAdd;
   }

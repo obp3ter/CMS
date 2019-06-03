@@ -20,6 +20,7 @@ import {RegisterComponent} from "@app/register/register.component";
 import {RegisterListenerComponent} from "@app/register/register-listener/register-listener.component";
 import {ReviewProposalComponent} from "@app/proposal/review-proposal/review-proposal.component";
 import {AdminComponent} from "@app/admin/admin.component";
+import {AssignProposalComponent} from "@app/proposal/assign-proposal/assign-proposal.component";
 
 const routes: Routes = [
   {path: 'books', component: BooksComponent},
@@ -36,6 +37,7 @@ const routes: Routes = [
   {path: 'sucess', component:SucessComponent},
   {path: 'author', component:AuthorComponent},
   {path: 'proposals/add-proposal', component: AddProposalComponent},
+  {path: 'proposals/assign-proposal', component: AssignProposalComponent},
   {path: 'proposals/review-proposal', component: ReviewProposalComponent},
   {path: 'proposals/upload', component:UpdateProposalFileComponent},
   {path: 'reviewer',component: ReviewerComponent},

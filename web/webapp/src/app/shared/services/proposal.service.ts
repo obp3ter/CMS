@@ -78,6 +78,11 @@ export class ProposalService {
     this.httpClient.post(`${this.path}/review`, body)
       .subscribe(res => console.log('Done'));
   }
+  assignProposal(body)
+  {
+    this.httpClient.post(`${this.path}/assign`, body)
+      .subscribe(res => console.log('Done'));
+  }
 
   getDeadline(deadlineName:string)
   {

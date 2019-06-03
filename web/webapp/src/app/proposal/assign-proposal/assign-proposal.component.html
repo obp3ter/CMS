@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Proposal id:  </label>
+        <select class="form-control" formControlName="proposal_id" #proposal_id (change)="filterReviewes(proposal_id.value)" >
+          <option *ngFor="let opt of this.proposals" value="{{opt.id}}">{{opt.id}}</option>
+        </select>
+      </div>
+
+      <!--      strong accept, accept, weak accept, borderline paper, weak reject, reject and strong reject-->
+      <div *ngIf="angForm.controls['proposal_id'].invalid && (angForm.controls['proposal_id'].dirty || angForm.controls['proposal_id'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['proposal_id'].errors.required">
+          Proposal id is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Reviewer id:  </label>
+        <select class="form-control" formControlName="reviewer_id" #reviewer_id >
+          <option *ngFor="let opt of this.reviewers" value="{{opt.id}}">{{opt.id}}</option>
+        </select>
+      </div>
+
+      <!--      strong accept, accept, weak accept, borderline paper, weak reject, reject and strong reject-->
+      <div *ngIf="angForm.controls['reviewer_id'].invalid && (angForm.controls['reviewer_id'].dirty || angForm.controls['reviewer_id'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['reviewer_id'].errors.required">
+          Reviewer id is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <button (click)="assignProposal(proposal_id.value,reviewer_id.value)"
+                [disabled]="angForm.pristine || angForm.invalid"
+                class="btn btn-primary">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

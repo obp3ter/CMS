@@ -1,3 +1,5 @@
+import {Review} from "@app/shared/models/review.model";
+
 export class Proposal{
   id:number;
   authorID:number;
@@ -10,7 +12,7 @@ export class Proposal{
   reviewers:number[];
   refusers:number[];
   assignedReviewers:number[];
-  reviews:number[];
+  reviews:Array<Review> ;
 }
 
 // private Integer id;
