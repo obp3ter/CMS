@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {HttpClient, HttpParams} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import {Chair} from "../models/chair.model";
 import {Observable} from "rxjs";
 
@@ -28,6 +28,11 @@ export class ChairService {
     return this.httpClient.get<Array<Chair>>(this.path+"?email="+email)
 
   }
+
+  getChairById(id) : Observable<Array<Chair>> {
+    return this.httpClient.get<Array<Chair>>(this.path+"?id=" + id);
+}
+
   addChair(chair_email, chair_password) {
     const formData: FormData = new FormData();
     formData.append("email",chair_email);

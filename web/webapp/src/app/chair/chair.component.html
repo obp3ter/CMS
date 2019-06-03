@@ -1,4 +1,11 @@
-<p>
-  chair works!
-  {{chairId}}
-</p>
+<h2>Logged in as <b>chair</b> with email: <span class = "emailLogg">{{chairEmail}}</span>
+</h2>
+<div class = "navigation">
+  <button (click)="this.showDeadline()">Modify deadlines</button>
+  <button>Assign papers</button>
+</div>
+
+<div class = "child">
+  <app-deadline-input [isChair]="chairDeadline"></app-deadline-input>
+
+</div>

@@ -12,6 +12,13 @@ export class ProposalService {
     this.proposalRes = new Array<Proposal>();
   }
 
+  updateDeadline(type,date){
+    const form : FormData = new FormData();
+    form.append("deadlineName",type);
+    form.append("date",date);
+    this.httpClient.post(`${this.path}/deadlines`,form)
+  }
+
   getAllProposals(): Observable<Array<Proposal>> {
     console.log('getAllProposals() enter ');
     const a = this.httpClient.get<Array<Proposal>>(this.path);
