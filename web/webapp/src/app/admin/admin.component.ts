@@ -9,6 +9,7 @@ export class AdminComponent implements OnInit {
 
   deadlines =false;
   chair = false;
+  isChair =false;
   constructor() { }
 
   inputChair(){

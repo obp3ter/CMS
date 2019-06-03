@@ -29,11 +29,14 @@ export class PrintProposalComponent implements OnInit {
       else if(sessionStorage.getItem("userType")=="reviewer") {
         this.getAllbyIdReviewer();
       }
+      else if(sessionStorage.getItem("userType")=="chair") {
+        this.getAllProposals();
+      }
   }
 
   getAllProposals(): void {
     this.proposalService.getAllProposals()
-      .subscribe(stud => this.proposals = stud["proposals"]);
+      .subscribe(stud => this.proposals = stud);
     console.log(this.proposals)
   }
   getAllbyIdAuthor(): void {
@@ -79,6 +82,10 @@ export class PrintProposalComponent implements OnInit {
   {
     return sessionStorage.getItem("userType")=="author";
   }
+  chairShow()
+  {
+    return sessionStorage.getItem("userType")=="chair";
+  }
 
 
   bidProposal(id)
@@ -99,5 +106,40 @@ export class PrintProposalComponent implements OnInit {
 
   onSelect(proposal): void {
     this.selectedProposal = proposal;
+  }
+
+  reviewGrade(grade)
+  {
+    switch(grade)
+    {
+      case(0):
+      {
+        return "strong reject"
+      }
+      case(1):
+      {
+        return "reject"
+      }
+      case(2):
+      {
+        return "weak reject"
+      }
+      case(3):
+      {
+        return "borderline paper"
+      }
+      case(4):
+      {
+        return "weak accept"
+      }
+      case(5):
+      {
+        return "accept"
+      }
+      case(6):
+      {
+        return "strong accept"
+      }
+    }
   }
 }

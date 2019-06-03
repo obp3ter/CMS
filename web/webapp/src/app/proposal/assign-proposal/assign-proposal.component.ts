@@ -41,8 +41,8 @@ export class AssignProposalComponent implements OnInit {
     let input = new FormData();
     input.append("proposalID", proposal_id);
     input.append("reviewerID",reviewer_id);
-    //this.proposalService.assignProposal(input);
-    //this.router.navigate(['/assigner'] );
+    this.proposalService.assignProposal(input);
+    this.router.navigate(['/chair'] );
   }
   getAllProposals(): void {
     this.proposalService.getAllProposals()

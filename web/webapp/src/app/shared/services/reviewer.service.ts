@@ -28,6 +28,10 @@ export class ReviewerService {
     return this.httpClient.get<Array<Reviewer>>(this.path+"?email="+email)
 
   }
+  getReviewerById(id):Observable<Array<Reviewer>>
+  {
+    return this.httpClient.get<Array<Reviewer>>(this.path+"?id="+id);
+  }
   addReviewer(reviewer_email, reviewer_password, reviewer_company) {
     const formData: FormData = new FormData();
     formData.append("email",reviewer_email);

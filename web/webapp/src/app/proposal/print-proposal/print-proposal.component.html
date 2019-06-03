@@ -12,6 +12,9 @@
       <th></th>
     </ng-container>
     <ng-container *ngIf="(reviewerShow()  && !isBeforeDeadline('bidding'))">
+    <th></th>
+    </ng-container>
+    <ng-container *ngIf="chairShow()">
       <th></th>
     </ng-container>
 <!--    <th></th>-->
@@ -54,6 +57,11 @@
                   class="btn btn-primary">
         Review Paper
       </button></td>
+    </ng-container>
+    <ng-container *ngIf="chairShow()">
+      <td>
+        <ng-container *ngFor="let review of proposal.reviews">[ReviewerID: {{review.id}}, grade: {{this.reviewGrade(review.grade)}}]</ng-container>
+      </td>
     </ng-container>
 
 <!--    <td> <button (click)="deleteProposal(proposal.id)"-->

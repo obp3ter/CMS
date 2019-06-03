@@ -10,14 +10,16 @@ import {ReviewerService} from "@app/shared/services/reviewer.service";
   styleUrls: ['./reviewer.component.css']
 })
 export class ReviewerComponent implements OnInit {
-  reviewerId: number
-  constructor(private route: ActivatedRoute,  private router: Router) { }
+  reviewerId: number;
+  reviewerEmail: string;
+  constructor(private route: ActivatedRoute,  private router: Router,public reviewerService : ReviewerService) { }
 
   ngOnInit() {
     console.log(sessionStorage.getItem("userType")!="reviewer")
     if(sessionStorage.getItem("userType")!="reviewer"){
       this.router.navigate(['login//login-reviewer'], { skipLocationChange: true});}
     this.reviewerId = toNumbers(sessionStorage.getItem("id"))[0];
+    this.reviewerService.getReviewerById(this.reviewerId).subscribe(ar => this.reviewerEmail = ar[0].email);
   }
 
 }

@@ -10,7 +10,9 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 export class DeadlineInputComponent implements OnInit {
 
   @Input() show : boolean;
+  @Input() isChair :boolean;
   angForm : FormGroup;
+
 
   constructor(private fb : FormBuilder,public proposalService : ProposalService) {
   }
@@ -34,6 +36,21 @@ export class DeadlineInputComponent implements OnInit {
     if(DeadlineInputComponent.isValidDate(bidding)){
       var bidding2 = DeadlineInputComponent.transformDate(bidding);
       this.proposalService.addDeadline("bidding",bidding2);
+    }
+  }
+
+  updateDate(abstracts,paper,bidding){
+    if(DeadlineInputComponent.isValidDate(abstracts)){
+      var abstracts2  = DeadlineInputComponent.transformDate(abstracts);
+      this.proposalService.updateDeadline("abstracts",abstracts2);
+    }
+    if(DeadlineInputComponent.isValidDate(paper)){
+      var paper2 = DeadlineInputComponent.transformDate(paper);
+      this.proposalService.updateDeadline("papers",paper2);
+    }
+    if(DeadlineInputComponent.isValidDate(bidding)){
+      var bidding2 = DeadlineInputComponent.transformDate(bidding);
+      this.proposalService.updateDeadline("bidding",bidding2);
     }
   }
 
@@ -86,6 +103,7 @@ export class DeadlineInputComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.isChair = false;
   }
 
 }

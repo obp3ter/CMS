@@ -31,6 +31,7 @@ import { ReviewProposalComponent } from './proposal/review-proposal/review-propo
 import { AdminComponent } from './admin/admin.component';
 import { DeadlineInputComponent } from './admin/deadline-input/deadline-input.component';
 import { ChairRegisterComponent } from './register/chair-register/chair-register.component';
+import { SessionsComponent } from './sessions/sessions.component';
 import { AssignProposalComponent } from './proposal/assign-proposal/assign-proposal.component';
 
 
@@ -62,6 +63,7 @@ import { AssignProposalComponent } from './proposal/assign-proposal/assign-propo
     ReviewProposalComponent,
     DeadlineInputComponent,
     ChairRegisterComponent,
+    SessionsComponent,
     AssignProposalComponent,
 
   ],

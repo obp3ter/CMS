@@ -10,14 +10,28 @@ import {ChairService} from "@app/shared/services/chair.service";
   styleUrls: ['./chair.component.css']
 })
 export class ChairComponent implements OnInit {
-  chairId: number
-  constructor(private route: ActivatedRoute,  private router: Router) { }
+  chairId: number;
+  chairEmail : string;
+  chairDeadline : boolean;
+  proposalsShow: boolean;
+  constructor(private route: ActivatedRoute,  private router: Router,public chairService : ChairService) { }
+
+  public showDeadline(){
+    this.proposalsShow =false;
+    this.chairDeadline = !this.chairDeadline;
+  }
+  public showProposals(){
+    this.chairDeadline=false;
+    this.proposalsShow = !this.proposalsShow;
+  }
 
   ngOnInit() {
     console.log(sessionStorage.getItem("userType")!="chair")
     if(sessionStorage.getItem("userType")!="chair"){
       this.router.navigate(['login//login-chair'], { skipLocationChange: true});}
     this.chairId = toNumbers(sessionStorage.getItem("id"))[0];
+    this.chairService.getChairById(this.chairId).subscribe( ac => this.chairEmail = ac[0].email);
+
   }
 
 }
