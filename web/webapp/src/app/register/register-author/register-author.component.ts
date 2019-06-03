@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
 import {AuthorService} from "@app/shared/services/author.service";
+import {Author} from "@app/shared/models/author.model";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-register-author',
@@ -9,8 +11,9 @@ import {AuthorService} from "@app/shared/services/author.service";
 })
 export class RegisterAuthorComponent implements OnInit {
 
+  //router: Router;
   angForm: FormGroup;
-  constructor(private fb: FormBuilder,public authorService: AuthorService) {
+  constructor(private fb: FormBuilder,public authorService: AuthorService, private router: Router) {
     this.createForm();
   }
 
@@ -23,9 +26,32 @@ export class RegisterAuthorComponent implements OnInit {
     });
   }
 
-  addAuthor(author_email, author_password, author_password_confirm, author_company) {
-    if(author_password == author_password_confirm){
-    this.authorService.addAuthor(author_email, author_password, author_company);}
+  //checkauthor(author_email):
+
+  addAuthor(author_email, author_password, author_password_confirm, author_company):boolean {
+    let saved: boolean = false;
+    this.authorService.getAllAuthors().subscribe((a: Author[])=>{
+      console.log(a);
+      for(var i= 0; i < a.length; i++)
+        if (a[i].email == author_email) {
+          console.log("Duplicate email");
+          return;
+        }
+      if(author_password == author_password_confirm){
+        this.authorService.addAuthor(author_email, author_password, author_company);
+        this.router.navigateByUrl("login/login-author",{ skipLocationChange: true});
+        saved = true;
+      }
+
+    } );
+    if(saved){
+      console.log("saved");
+      //this.router.navigate(['login/login-author'],{ skipLocationChange: true});
+      return true;
+    }else {
+      console.log("not saved");
+      return false;
+    }
   }
 
   setColorRed(what: string) {

@@ -2,6 +2,7 @@ import {Injectable} from "@angular/core";
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {Author} from "../models/author.model";
 import {Observable} from "rxjs";
+import {forEach} from "@angular/router/src/utils/collection";
 
 @Injectable({
   providedIn: 'root'
@@ -36,6 +37,7 @@ export class AuthorService {
     console.log(formData);
     this.httpClient.post(`${this.path}`, formData)
       .subscribe(res => console.log('Done'));
+
   }
 
 //@RequestMapping(value = "/authors/{id}", method = RequestMethod.DELETE)

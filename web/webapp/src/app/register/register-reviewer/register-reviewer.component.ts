@@ -1,41 +1,41 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,  FormBuilder,  Validators } from '@angular/forms';
-import {ListenerService} from "@app/shared/services/listener.service";
+import {ReviewerService} from "@app/shared/services/reviewer.service";
 import {Router} from "@angular/router";
 import {Author} from "@app/shared/models/author.model";
-import {Listener} from "@app/shared/models/listener.model";
+import {Reviewer} from "@app/shared/models/reviewer.model";
 
 @Component({
-  selector: 'app-register-listener',
-  templateUrl: './register-listener.component.html',
-  styleUrls: ['./register-listener.component.css']
+  selector: 'app-register-reviewer',
+  templateUrl: './register-reviewer.component.html',
+  styleUrls: ['./register-reviewer.component.css']
 })
-export class RegisterListenerComponent implements OnInit {
+export class RegisterReviewerComponent implements OnInit {
 
   angForm: FormGroup;
-  constructor(private fb: FormBuilder,public listenerService: ListenerService, private router: Router) {
+  constructor(private fb: FormBuilder,public reviewerService: ReviewerService, private router: Router) {
     this.createForm();
   }
 
   createForm() {
     this.angForm = this.fb.group({
-      listener_email: ['', Validators.required ],
-      listener_password: ['', Validators.required ],
-      listener_password_confirm: ['', Validators.required ]
+      reviewer_email: ['', Validators.required ],
+      reviewer_password: ['', Validators.required ],
+      reviewer_password_confirm: ['', Validators.required ]
     });
   }
 
-  addListener(listener_email, listener_password, listener_password_confirm) {
-    this.listenerService.getAllListeners().subscribe((l: Listener[]) => {
+  addReviewer(reviewer_email, reviewer_password, reviewer_password_confirm, reviewer_company) {
+    this.reviewerService.getAllReviewers().subscribe((l: Reviewer[]) => {
       console.log(l);
       for (var i = 0; i < l.length; i++)
-        if (l[i].email == listener_email) {
+        if (l[i].email == reviewer_email) {
           console.log("Duplicate email");
           return;
         }
-      if (listener_password == listener_password_confirm) {
-        this.listenerService.addListener(listener_email, listener_password);
-        this.router.navigateByUrl("login/login-listener", {skipLocationChange: true});
+      if (reviewer_password == reviewer_password_confirm) {
+        this.reviewerService.addReviewer(reviewer_email, reviewer_password, reviewer_company);
+        this.router.navigateByUrl("login/login-reviewer", {skipLocationChange: true});
       }
 
     });
