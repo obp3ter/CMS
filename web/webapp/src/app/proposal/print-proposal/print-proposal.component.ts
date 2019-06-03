@@ -52,7 +52,7 @@ export class PrintProposalComponent implements OnInit {
     }
     else
     {
-      console.log("getting by assigned")
+      console.log("getting by assigned");
       this.proposalService.getProposalByAssigned(toNumbers(sessionStorage.getItem("id"))[0])
         .subscribe(stud => this.proposals = stud);
     }

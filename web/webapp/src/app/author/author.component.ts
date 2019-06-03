@@ -3,6 +3,8 @@ import {Author} from "@app/shared/models/author.model";
 import {toNumbers} from "@angular/compiler-cli/src/diagnostics/typescript_version";
 import {ActivatedRoute, Router} from "@angular/router";
 import {AuthorService} from "@app/shared/services/author.service";
+import {Session} from "@app/shared/models/session.model";
+import {SessionService} from "@app/shared/services/session.service";
 
 @Component({
   selector: 'app-author',
@@ -12,7 +14,21 @@ import {AuthorService} from "@app/shared/services/author.service";
 export class AuthorComponent implements OnInit {
   authorId: number;
   authorEmail: string;
-  constructor(private route: ActivatedRoute,  private router: Router,public authorService : AuthorService) { }
+  showSessionB = false;
+  sessions : Array<Session>;
+  constructor(private route: ActivatedRoute,  private router: Router,public authorService : AuthorService,public sessionService : SessionService) { }
+
+  public showSession(){
+    this.showSessionB = !this.showSessionB;
+    this.sessionService.getAll().subscribe(sesionArray => {
+      sesionArray.forEach(session =>{
+        if(session.speaker.id == this.authorId){
+          this.sessions.push(session);
+        }
+      })
+    });
+
+  }
 
   ngOnInit() {
     console.log(sessionStorage.getItem("userType")!="author");

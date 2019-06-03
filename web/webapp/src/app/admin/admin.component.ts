@@ -10,12 +10,15 @@ export class AdminComponent implements OnInit {
   deadlines =false;
   chair = false;
   isChair =false;
+  showSessionB = false;
   constructor() { }
 
   inputChair(){
     this.deadlines = false;
     this.chair = true;
   }
+
+
 
   inputDeadlines(){
     this.chair = false;

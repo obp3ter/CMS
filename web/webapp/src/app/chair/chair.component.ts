@@ -12,7 +12,9 @@ import {ChairService} from "@app/shared/services/chair.service";
 export class ChairComponent implements OnInit {
   chairId: number;
   chairEmail : string;
-  chairDeadline : boolean
+  chairDeadline : boolean;
+  showSessionAdd : boolean;
+  proposalsShow : boolean;
   constructor(private route: ActivatedRoute,  private router: Router,public chairService : ChairService) { }
 
   public showDeadline(){

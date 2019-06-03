@@ -3,8 +3,8 @@
 <h2>Your Files:</h2>
 <div>
 <button> <a href="/proposals/add-proposal">Add Proposal</a></button>
-<button (click)="showSession()">Show your sessions</button>
-<div class = "showSessions" *ngIf="showSessions">
+<button (click)="this.showSession()">Show your sessions</button>
+<div class = "showSessions" *ngIf="this.showSessionB">
   <div *ngFor="let session of sessions">
     <h4>{{session.speaker}}</h4>
     <h4>{{session.paperFileName}}</h4>

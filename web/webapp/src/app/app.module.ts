@@ -32,6 +32,8 @@ import { AdminComponent } from './admin/admin.component';
 import { DeadlineInputComponent } from './admin/deadline-input/deadline-input.component';
 import { ChairRegisterComponent } from './register/chair-register/chair-register.component';
 import { SessionsComponent } from './sessions/sessions.component';
+import {AddSessionComponent} from "@app/sessions/add-session/add-session.component";
+import {AssignProposalComponent} from "@app/proposal/assign-proposal/assign-proposal.component";
 
 
 
