@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {HttpClient, HttpParams} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import {Author} from "../models/author.model";
 import {Observable} from "rxjs";
 
@@ -22,12 +22,17 @@ export class AuthorService {
   }
   getAuthorByEmail(email):Observable<Array<Author>>
   {
-
-    let a:Author;
     this.authorRes=new Array<Author>();
-    return this.httpClient.get<Array<Author>>(this.path+"?email="+email)
+    return this.httpClient.get<Array<Author>>(this.path + "?email=" + email);
 
   }
+
+  getAuthorById(id):Observable<Array<Author>>
+  {
+
+    return this.httpClient.get<Array<Author>>(this.path + "?id=" + id);
+  }
+
   addAuthor(author_email, author_password, author_company) {
     const formData: FormData = new FormData();
     formData.append("email",author_email);
